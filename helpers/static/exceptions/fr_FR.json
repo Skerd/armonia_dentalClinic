@@ -1,0 +1,190 @@
+{
+    "appointment_already_exists": {
+        "message": "Ce rendez-vous a déjà été pris. Actualisez pour le voir.",
+        "error_code": "appointment_already_exists",
+        "status": 409
+    },
+    "appointment_cancel_deadline_passed": {
+        "message": "L'annulation en ligne se ferme {} heures avant le rendez-vous. Veuillez appeler le cabinet.",
+        "error_code": "appointment_cancel_deadline_passed",
+        "status": 409
+    },
+    "appointment_guest_booking_disabled": {
+        "message": "Veuillez vous connecter pour prendre rendez-vous.",
+        "error_code": "appointment_guest_booking_disabled"
+    },
+    "appointment_in_past": {
+        "message": "Un rendez-vous ne peut pas commencer dans le passé.",
+        "error_code": "appointment_in_past"
+    },
+    "appointment_invalid_status": {
+        "message": "Ce rendez-vous ne peut plus être modifié de cette façon.",
+        "error_code": "appointment_invalid_status",
+        "status": 409
+    },
+    "appointment_invalid_time": {
+        "message": "Cette date et cette heure n'existent pas au cabinet (changement d'heure).",
+        "error_code": "appointment_invalid_time"
+    },
+    "appointment_no_practitioner_available": {
+        "message": "Plus personne n'est disponible à cette heure. Veuillez choisir un autre créneau.",
+        "error_code": "appointment_no_practitioner_available",
+        "status": 409
+    },
+    "appointment_not_found": {
+        "message": "Le rendez-vous est introuvable.",
+        "error_code": "appointment_not_found",
+        "status": 404
+    },
+    "appointment_practitioner_not_eligible": {
+        "message": "Ce praticien ne propose pas ce soin sur ce site.",
+        "error_code": "appointment_practitioner_not_eligible"
+    },
+    "appointment_privacy_not_accepted": {
+        "message": "Veuillez accepter la politique de confidentialité pour réserver.",
+        "error_code": "appointment_privacy_not_accepted"
+    },
+    "appointment_reschedule_deadline_passed": {
+        "message": "Les modifications en ligne se ferment {} heures avant le rendez-vous. Veuillez appeler le cabinet.",
+        "error_code": "appointment_reschedule_deadline_passed",
+        "status": 409
+    },
+    "appointment_slot_unavailable": {
+        "message": "Ce créneau n'est plus libre. Veuillez en choisir un autre.",
+        "error_code": "appointment_slot_unavailable",
+        "status": 409
+    },
+    "appointment_too_early_to_close": {
+        "message": "Cela ne peut être enregistré qu'une fois le rendez-vous commencé.",
+        "error_code": "appointment_too_early_to_close"
+    },
+    "appointment_too_far_ahead": {
+        "message": "Les rendez-vous peuvent être pris au plus {} jours à l'avance.",
+        "error_code": "appointment_too_far_ahead"
+    },
+    "appointment_too_soon": {
+        "message": "Les rendez-vous doivent être pris au moins {} heures à l'avance.",
+        "error_code": "appointment_too_soon"
+    },
+    "clinicConfig_already_exists": {
+        "message": "Des paramètres de cabinet existent déjà pour cette entreprise.",
+        "error_code": "clinicConfig_already_exists",
+        "status": 409
+    },
+    "clinicConfig_not_found": {
+        "message": "Les paramètres du cabinet sont introuvables.",
+        "error_code": "clinicConfig_not_found",
+        "status": 404
+    },
+    "clinicLocation_already_exists": {
+        "message": "Un autre site utilise déjà ce nom.",
+        "error_code": "clinicLocation_already_exists",
+        "status": 409
+    },
+    "clinicLocation_not_found": {
+        "message": "Le site du cabinet est introuvable.",
+        "error_code": "clinicLocation_not_found",
+        "status": 404
+    },
+    "clinicService_already_exists": {
+        "message": "Un autre soin utilise déjà ce nom d'adresse web.",
+        "error_code": "clinicService_already_exists",
+        "status": 409
+    },
+    "clinicService_not_found": {
+        "message": "Le soin est introuvable.",
+        "error_code": "clinicService_not_found",
+        "status": 404
+    },
+    "clinic_currency_not_configured": {
+        "message": "Ajoutez une devise avant de configurer la réservation en ligne.",
+        "error_code": "clinic_currency_not_configured"
+    },
+    "clinic_hours_end_before_start": {
+        "message": "Chaque plage horaire doit se terminer après son début.",
+        "error_code": "clinic_hours_end_before_start"
+    },
+    "clinic_invalid_timezone": {
+        "message": "« {} » n'est pas un fuseau horaire valide (par exemple Europe/Zurich).",
+        "error_code": "clinic_invalid_timezone"
+    },
+    "clinic_location_name_taken": {
+        "message": "Un autre site utilise déjà ce nom.",
+        "error_code": "clinic_location_name_taken",
+        "status": 409
+    },
+    "clinic_location_not_found": {
+        "message": "Le site du cabinet est introuvable.",
+        "error_code": "clinic_location_not_found",
+        "status": 404
+    },
+    "clinic_service_not_found": {
+        "message": "Le soin est introuvable ou ne peut pas être réservé en ligne.",
+        "error_code": "clinic_service_not_found",
+        "status": 404
+    },
+    "clinic_service_price_required": {
+        "message": "Saisissez un prix ou choisissez « sur demande » ou « gratuit ».",
+        "error_code": "clinic_service_price_required"
+    },
+    "clinic_service_slug_taken": {
+        "message": "Un autre soin utilise déjà ce slug.",
+        "error_code": "clinic_service_slug_taken",
+        "status": 409
+    },
+    "clinic_setup_missing_location": {
+        "message": "Ajoutez un site actif avant d'activer la réservation en ligne.",
+        "error_code": "clinic_setup_missing_location"
+    },
+    "clinic_setup_missing_practitioner": {
+        "message": "Ajoutez un praticien réservable, avec des horaires, qui réalise un soin en ligne sur l'un de vos sites.",
+        "error_code": "clinic_setup_missing_practitioner"
+    },
+    "clinic_setup_missing_service": {
+        "message": "Ajoutez un soin public réservable en ligne avant d'activer la réservation en ligne.",
+        "error_code": "clinic_setup_missing_service"
+    },
+    "dental_clinic_not_configured": {
+        "message": "La réservation en ligne n'est pas disponible pour ce cabinet.",
+        "error_code": "dental_clinic_not_configured",
+        "status": 404
+    },
+    "practitioner_already_exists": {
+        "message": "Cet identifiant est déjà lié à un autre membre de l'équipe.",
+        "error_code": "practitioner_already_exists",
+        "status": 409
+    },
+    "practitioner_has_future_appointments": {
+        "message": "Ce praticien a {} rendez-vous à venir. Déplacez-les ou annulez-les d'abord.",
+        "error_code": "practitioner_has_future_appointments",
+        "status": 409
+    },
+    "practitioner_not_found": {
+        "message": "Le praticien est introuvable.",
+        "error_code": "practitioner_not_found",
+        "status": 404
+    },
+    "practitioner_schedule_location_not_listed": {
+        "message": "Les horaires ne peuvent être définis que pour les sites où cette personne travaille.",
+        "error_code": "practitioner_schedule_location_not_listed"
+    },
+    "practitioner_user_taken": {
+        "message": "Cet utilisateur est déjà lié à un autre profil de praticien.",
+        "error_code": "practitioner_user_taken",
+        "status": 409
+    },
+    "scheduleException_not_found": {
+        "message": "L'absence est introuvable.",
+        "error_code": "scheduleException_not_found",
+        "status": 404
+    },
+    "schedule_exception_overlaps_appointments": {
+        "message": "Cette période chevauche les rendez-vous {}. Déplacez-les ou annulez-les d'abord.",
+        "error_code": "schedule_exception_overlaps_appointments",
+        "status": 409
+    },
+    "schedule_exception_target_required": {
+        "message": "Choisissez soit un praticien (absence), soit un site (fermeture), pas les deux.",
+        "error_code": "schedule_exception_target_required"
+    }
+}

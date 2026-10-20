@@ -1,0 +1,190 @@
+{
+    "appointment_already_exists": {
+        "message": "Dieser Termin wurde bereits gebucht. Laden Sie die Seite neu.",
+        "error_code": "appointment_already_exists",
+        "status": 409
+    },
+    "appointment_cancel_deadline_passed": {
+        "message": "Die Online-Absage ist bis {} Stunden vor dem Termin möglich. Bitte rufen Sie die Praxis an.",
+        "error_code": "appointment_cancel_deadline_passed",
+        "status": 409
+    },
+    "appointment_guest_booking_disabled": {
+        "message": "Bitte melden Sie sich an, um einen Termin zu buchen.",
+        "error_code": "appointment_guest_booking_disabled"
+    },
+    "appointment_in_past": {
+        "message": "Ein Termin kann nicht in der Vergangenheit beginnen.",
+        "error_code": "appointment_in_past"
+    },
+    "appointment_invalid_status": {
+        "message": "Dieser Termin kann so nicht mehr geändert werden.",
+        "error_code": "appointment_invalid_status",
+        "status": 409
+    },
+    "appointment_invalid_time": {
+        "message": "Dieses Datum und diese Uhrzeit gibt es in der Praxis nicht (Zeitumstellung).",
+        "error_code": "appointment_invalid_time"
+    },
+    "appointment_no_practitioner_available": {
+        "message": "Zu dieser Zeit ist niemand mehr frei. Bitte wählen Sie eine andere Zeit.",
+        "error_code": "appointment_no_practitioner_available",
+        "status": 409
+    },
+    "appointment_not_found": {
+        "message": "Der Termin wurde nicht gefunden.",
+        "error_code": "appointment_not_found",
+        "status": 404
+    },
+    "appointment_practitioner_not_eligible": {
+        "message": "Diese Fachperson bietet diese Behandlung an diesem Standort nicht an.",
+        "error_code": "appointment_practitioner_not_eligible"
+    },
+    "appointment_privacy_not_accepted": {
+        "message": "Bitte akzeptieren Sie die Datenschutzerklärung, um zu buchen.",
+        "error_code": "appointment_privacy_not_accepted"
+    },
+    "appointment_reschedule_deadline_passed": {
+        "message": "Online-Änderungen sind bis {} Stunden vor dem Termin möglich. Bitte rufen Sie die Praxis an.",
+        "error_code": "appointment_reschedule_deadline_passed",
+        "status": 409
+    },
+    "appointment_slot_unavailable": {
+        "message": "Diese Zeit ist nicht mehr frei. Bitte wählen Sie eine andere Zeit.",
+        "error_code": "appointment_slot_unavailable",
+        "status": 409
+    },
+    "appointment_too_early_to_close": {
+        "message": "Dies kann erst erfasst werden, wenn der Termin begonnen hat.",
+        "error_code": "appointment_too_early_to_close"
+    },
+    "appointment_too_far_ahead": {
+        "message": "Termine können höchstens {} Tage im Voraus gebucht werden.",
+        "error_code": "appointment_too_far_ahead"
+    },
+    "appointment_too_soon": {
+        "message": "Termine müssen mindestens {} Stunden im Voraus gebucht werden.",
+        "error_code": "appointment_too_soon"
+    },
+    "clinicConfig_already_exists": {
+        "message": "Für dieses Unternehmen gibt es bereits Praxiseinstellungen.",
+        "error_code": "clinicConfig_already_exists",
+        "status": 409
+    },
+    "clinicConfig_not_found": {
+        "message": "Die Praxiseinstellungen wurden nicht gefunden.",
+        "error_code": "clinicConfig_not_found",
+        "status": 404
+    },
+    "clinicLocation_already_exists": {
+        "message": "Ein anderer Standort verwendet diesen Namen bereits.",
+        "error_code": "clinicLocation_already_exists",
+        "status": 409
+    },
+    "clinicLocation_not_found": {
+        "message": "Der Praxisstandort wurde nicht gefunden.",
+        "error_code": "clinicLocation_not_found",
+        "status": 404
+    },
+    "clinicService_already_exists": {
+        "message": "Eine andere Behandlung verwendet diesen Webadressen-Namen bereits.",
+        "error_code": "clinicService_already_exists",
+        "status": 409
+    },
+    "clinicService_not_found": {
+        "message": "Die Behandlung wurde nicht gefunden.",
+        "error_code": "clinicService_not_found",
+        "status": 404
+    },
+    "clinic_currency_not_configured": {
+        "message": "Legen Sie zuerst eine Währung an, bevor Sie Online-Buchungen einrichten.",
+        "error_code": "clinic_currency_not_configured"
+    },
+    "clinic_hours_end_before_start": {
+        "message": "Jede Zeile muss nach ihrem Beginn enden.",
+        "error_code": "clinic_hours_end_before_start"
+    },
+    "clinic_invalid_timezone": {
+        "message": "«{}» ist keine gültige Zeitzone (zum Beispiel Europe/Zurich).",
+        "error_code": "clinic_invalid_timezone"
+    },
+    "clinic_location_name_taken": {
+        "message": "Ein anderer Standort verwendet diesen Namen bereits.",
+        "error_code": "clinic_location_name_taken",
+        "status": 409
+    },
+    "clinic_location_not_found": {
+        "message": "Der Praxisstandort wurde nicht gefunden.",
+        "error_code": "clinic_location_not_found",
+        "status": 404
+    },
+    "clinic_service_not_found": {
+        "message": "Die Behandlung wurde nicht gefunden oder kann nicht online gebucht werden.",
+        "error_code": "clinic_service_not_found",
+        "status": 404
+    },
+    "clinic_service_price_required": {
+        "message": "Geben Sie einen Preis ein oder wählen Sie «auf Anfrage» bzw. «kostenlos».",
+        "error_code": "clinic_service_price_required"
+    },
+    "clinic_service_slug_taken": {
+        "message": "Eine andere Behandlung verwendet diesen Slug bereits.",
+        "error_code": "clinic_service_slug_taken",
+        "status": 409
+    },
+    "clinic_setup_missing_location": {
+        "message": "Legen Sie einen aktiven Standort an, bevor Sie Online-Buchungen einschalten.",
+        "error_code": "clinic_setup_missing_location"
+    },
+    "clinic_setup_missing_practitioner": {
+        "message": "Legen Sie eine buchbare Fachperson mit Arbeitszeiten an, die eine Online-Behandlung an einem Ihrer Standorte anbietet.",
+        "error_code": "clinic_setup_missing_practitioner"
+    },
+    "clinic_setup_missing_service": {
+        "message": "Legen Sie eine öffentliche, online buchbare Behandlung an, bevor Sie Online-Buchungen einschalten.",
+        "error_code": "clinic_setup_missing_service"
+    },
+    "dental_clinic_not_configured": {
+        "message": "Online-Buchungen sind für diese Praxis nicht verfügbar.",
+        "error_code": "dental_clinic_not_configured",
+        "status": 404
+    },
+    "practitioner_already_exists": {
+        "message": "Dieses Benutzerkonto ist bereits mit einem anderen Teammitglied verknüpft.",
+        "error_code": "practitioner_already_exists",
+        "status": 409
+    },
+    "practitioner_has_future_appointments": {
+        "message": "Diese Fachperson hat {} bevorstehende(n) Termin(e). Verschieben oder stornieren Sie diese zuerst.",
+        "error_code": "practitioner_has_future_appointments",
+        "status": 409
+    },
+    "practitioner_not_found": {
+        "message": "Die Fachperson wurde nicht gefunden.",
+        "error_code": "practitioner_not_found",
+        "status": 404
+    },
+    "practitioner_schedule_location_not_listed": {
+        "message": "Arbeitszeiten können nur für Standorte erfasst werden, an denen diese Person arbeitet.",
+        "error_code": "practitioner_schedule_location_not_listed"
+    },
+    "practitioner_user_taken": {
+        "message": "Dieser Benutzer ist bereits mit einem anderen Profil verknüpft.",
+        "error_code": "practitioner_user_taken",
+        "status": 409
+    },
+    "scheduleException_not_found": {
+        "message": "Der Abwesenheitseintrag wurde nicht gefunden.",
+        "error_code": "scheduleException_not_found",
+        "status": 404
+    },
+    "schedule_exception_overlaps_appointments": {
+        "message": "Dieser Zeitraum überschneidet sich mit den Terminen {}. Verschieben oder stornieren Sie diese zuerst.",
+        "error_code": "schedule_exception_overlaps_appointments",
+        "status": 409
+    },
+    "schedule_exception_target_required": {
+        "message": "Wählen Sie entweder eine Fachperson (Abwesenheit) oder einen Standort (Schliessung), nicht beides.",
+        "error_code": "schedule_exception_target_required"
+    }
+}

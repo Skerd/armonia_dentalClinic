@@ -1,0 +1,190 @@
+{
+    "appointment_already_exists": {
+        "message": "Questo appuntamento è già stato prenotato. Aggiorna per vederlo.",
+        "error_code": "appointment_already_exists",
+        "status": 409
+    },
+    "appointment_cancel_deadline_passed": {
+        "message": "L'annullamento online chiude {} ore prima dell'appuntamento. Chiama lo studio.",
+        "error_code": "appointment_cancel_deadline_passed",
+        "status": 409
+    },
+    "appointment_guest_booking_disabled": {
+        "message": "Accedi per prenotare un appuntamento.",
+        "error_code": "appointment_guest_booking_disabled"
+    },
+    "appointment_in_past": {
+        "message": "Un appuntamento non può iniziare nel passato.",
+        "error_code": "appointment_in_past"
+    },
+    "appointment_invalid_status": {
+        "message": "Questo appuntamento non può più essere modificato in questo modo.",
+        "error_code": "appointment_invalid_status",
+        "status": 409
+    },
+    "appointment_invalid_time": {
+        "message": "Questa data e ora non esistono presso lo studio (cambio d'ora).",
+        "error_code": "appointment_invalid_time"
+    },
+    "appointment_no_practitioner_available": {
+        "message": "Nessuno è più libero a quest'ora. Scegli un altro orario.",
+        "error_code": "appointment_no_practitioner_available",
+        "status": 409
+    },
+    "appointment_not_found": {
+        "message": "L'appuntamento non è stato trovato.",
+        "error_code": "appointment_not_found",
+        "status": 404
+    },
+    "appointment_practitioner_not_eligible": {
+        "message": "Questo professionista non offre questo trattamento in questa sede.",
+        "error_code": "appointment_practitioner_not_eligible"
+    },
+    "appointment_privacy_not_accepted": {
+        "message": "Accetta l'informativa sulla privacy per prenotare.",
+        "error_code": "appointment_privacy_not_accepted"
+    },
+    "appointment_reschedule_deadline_passed": {
+        "message": "Le modifiche online chiudono {} ore prima dell'appuntamento. Chiama lo studio.",
+        "error_code": "appointment_reschedule_deadline_passed",
+        "status": 409
+    },
+    "appointment_slot_unavailable": {
+        "message": "Questo orario non è più libero. Scegline un altro.",
+        "error_code": "appointment_slot_unavailable",
+        "status": 409
+    },
+    "appointment_too_early_to_close": {
+        "message": "Si può registrare solo dopo l'inizio dell'appuntamento.",
+        "error_code": "appointment_too_early_to_close"
+    },
+    "appointment_too_far_ahead": {
+        "message": "Gli appuntamenti si possono prenotare al massimo {} giorni prima.",
+        "error_code": "appointment_too_far_ahead"
+    },
+    "appointment_too_soon": {
+        "message": "Gli appuntamenti vanno prenotati con almeno {} ore di anticipo.",
+        "error_code": "appointment_too_soon"
+    },
+    "clinicConfig_already_exists": {
+        "message": "Le impostazioni dello studio esistono già per questa azienda.",
+        "error_code": "clinicConfig_already_exists",
+        "status": 409
+    },
+    "clinicConfig_not_found": {
+        "message": "Le impostazioni dello studio non sono state trovate.",
+        "error_code": "clinicConfig_not_found",
+        "status": 404
+    },
+    "clinicLocation_already_exists": {
+        "message": "Un'altra sede usa già questo nome.",
+        "error_code": "clinicLocation_already_exists",
+        "status": 409
+    },
+    "clinicLocation_not_found": {
+        "message": "La sede dello studio non è stata trovata.",
+        "error_code": "clinicLocation_not_found",
+        "status": 404
+    },
+    "clinicService_already_exists": {
+        "message": "Un altro trattamento usa già questo nome per l'indirizzo web.",
+        "error_code": "clinicService_already_exists",
+        "status": 409
+    },
+    "clinicService_not_found": {
+        "message": "Il trattamento non è stato trovato.",
+        "error_code": "clinicService_not_found",
+        "status": 404
+    },
+    "clinic_currency_not_configured": {
+        "message": "Aggiungi una valuta prima di configurare la prenotazione online.",
+        "error_code": "clinic_currency_not_configured"
+    },
+    "clinic_hours_end_before_start": {
+        "message": "Ogni fascia oraria deve terminare dopo il suo inizio.",
+        "error_code": "clinic_hours_end_before_start"
+    },
+    "clinic_invalid_timezone": {
+        "message": "«{}» non è un fuso orario valido (ad esempio Europe/Zurich).",
+        "error_code": "clinic_invalid_timezone"
+    },
+    "clinic_location_name_taken": {
+        "message": "Un'altra sede usa già questo nome.",
+        "error_code": "clinic_location_name_taken",
+        "status": 409
+    },
+    "clinic_location_not_found": {
+        "message": "La sede dello studio non è stata trovata.",
+        "error_code": "clinic_location_not_found",
+        "status": 404
+    },
+    "clinic_service_not_found": {
+        "message": "Il trattamento non è stato trovato o non è prenotabile online.",
+        "error_code": "clinic_service_not_found",
+        "status": 404
+    },
+    "clinic_service_price_required": {
+        "message": "Inserisci un prezzo oppure scegli «su richiesta» o «gratuito».",
+        "error_code": "clinic_service_price_required"
+    },
+    "clinic_service_slug_taken": {
+        "message": "Un altro trattamento usa già questo slug.",
+        "error_code": "clinic_service_slug_taken",
+        "status": 409
+    },
+    "clinic_setup_missing_location": {
+        "message": "Aggiungi una sede attiva prima di attivare la prenotazione online.",
+        "error_code": "clinic_setup_missing_location"
+    },
+    "clinic_setup_missing_practitioner": {
+        "message": "Aggiungi un professionista prenotabile, con orari di lavoro, che esegua un trattamento online in una delle tue sedi.",
+        "error_code": "clinic_setup_missing_practitioner"
+    },
+    "clinic_setup_missing_service": {
+        "message": "Aggiungi un trattamento pubblico prenotabile online prima di attivare la prenotazione online.",
+        "error_code": "clinic_setup_missing_service"
+    },
+    "dental_clinic_not_configured": {
+        "message": "La prenotazione online non è disponibile per questo studio.",
+        "error_code": "dental_clinic_not_configured",
+        "status": 404
+    },
+    "practitioner_already_exists": {
+        "message": "Questo accesso è già collegato a un altro membro del team.",
+        "error_code": "practitioner_already_exists",
+        "status": 409
+    },
+    "practitioner_has_future_appointments": {
+        "message": "Questo professionista ha {} appuntamento/i in programma. Spostali o annullali prima.",
+        "error_code": "practitioner_has_future_appointments",
+        "status": 409
+    },
+    "practitioner_not_found": {
+        "message": "Il professionista non è stato trovato.",
+        "error_code": "practitioner_not_found",
+        "status": 404
+    },
+    "practitioner_schedule_location_not_listed": {
+        "message": "Gli orari si possono impostare solo per le sedi in cui questa persona lavora.",
+        "error_code": "practitioner_schedule_location_not_listed"
+    },
+    "practitioner_user_taken": {
+        "message": "Questo utente è già collegato a un altro profilo professionista.",
+        "error_code": "practitioner_user_taken",
+        "status": 409
+    },
+    "scheduleException_not_found": {
+        "message": "L'assenza non è stata trovata.",
+        "error_code": "scheduleException_not_found",
+        "status": 404
+    },
+    "schedule_exception_overlaps_appointments": {
+        "message": "Questo periodo si sovrappone agli appuntamenti {}. Spostali o annullali prima.",
+        "error_code": "schedule_exception_overlaps_appointments",
+        "status": 409
+    },
+    "schedule_exception_target_required": {
+        "message": "Scegli un professionista (assenza) oppure una sede (chiusura), non entrambi.",
+        "error_code": "schedule_exception_target_required"
+    }
+}

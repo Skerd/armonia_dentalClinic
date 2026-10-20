@@ -1,0 +1,190 @@
+{
+    "appointment_already_exists": {
+        "message": "This appointment was already booked. Refresh to see it.",
+        "error_code": "appointment_already_exists",
+        "status": 409
+    },
+    "appointment_cancel_deadline_passed": {
+        "message": "Online cancellation closes {} hours before the appointment. Please call the clinic.",
+        "error_code": "appointment_cancel_deadline_passed",
+        "status": 409
+    },
+    "appointment_guest_booking_disabled": {
+        "message": "Please sign in to book an appointment.",
+        "error_code": "appointment_guest_booking_disabled"
+    },
+    "appointment_in_past": {
+        "message": "An appointment cannot start in the past.",
+        "error_code": "appointment_in_past"
+    },
+    "appointment_invalid_status": {
+        "message": "This appointment can no longer be changed this way.",
+        "error_code": "appointment_invalid_status",
+        "status": 409
+    },
+    "appointment_invalid_time": {
+        "message": "That date and time do not exist at the clinic (clock change).",
+        "error_code": "appointment_invalid_time"
+    },
+    "appointment_no_practitioner_available": {
+        "message": "Nobody is free at this time any more. Please choose another time.",
+        "error_code": "appointment_no_practitioner_available",
+        "status": 409
+    },
+    "appointment_not_found": {
+        "message": "The appointment was not found.",
+        "error_code": "appointment_not_found",
+        "status": 404
+    },
+    "appointment_practitioner_not_eligible": {
+        "message": "This practitioner does not offer that treatment at this location.",
+        "error_code": "appointment_practitioner_not_eligible"
+    },
+    "appointment_privacy_not_accepted": {
+        "message": "Please accept the privacy notice to book.",
+        "error_code": "appointment_privacy_not_accepted"
+    },
+    "appointment_reschedule_deadline_passed": {
+        "message": "Online changes close {} hours before the appointment. Please call the clinic.",
+        "error_code": "appointment_reschedule_deadline_passed",
+        "status": 409
+    },
+    "appointment_slot_unavailable": {
+        "message": "This time is no longer free. Please choose another time.",
+        "error_code": "appointment_slot_unavailable",
+        "status": 409
+    },
+    "appointment_too_early_to_close": {
+        "message": "This can only be recorded once the appointment has started.",
+        "error_code": "appointment_too_early_to_close"
+    },
+    "appointment_too_far_ahead": {
+        "message": "Appointments can be booked at most {} days ahead.",
+        "error_code": "appointment_too_far_ahead"
+    },
+    "appointment_too_soon": {
+        "message": "Appointments must be booked at least {} hours ahead.",
+        "error_code": "appointment_too_soon"
+    },
+    "clinicConfig_already_exists": {
+        "message": "Clinic settings already exist for this business.",
+        "error_code": "clinicConfig_already_exists",
+        "status": 409
+    },
+    "clinicConfig_not_found": {
+        "message": "Clinic settings were not found.",
+        "error_code": "clinicConfig_not_found",
+        "status": 404
+    },
+    "clinicLocation_already_exists": {
+        "message": "Another location already uses this name.",
+        "error_code": "clinicLocation_already_exists",
+        "status": 409
+    },
+    "clinicLocation_not_found": {
+        "message": "The clinic location was not found.",
+        "error_code": "clinicLocation_not_found",
+        "status": 404
+    },
+    "clinicService_already_exists": {
+        "message": "Another treatment already uses this web address name.",
+        "error_code": "clinicService_already_exists",
+        "status": 409
+    },
+    "clinicService_not_found": {
+        "message": "The treatment was not found.",
+        "error_code": "clinicService_not_found",
+        "status": 404
+    },
+    "clinic_currency_not_configured": {
+        "message": "Add a currency before setting up online booking.",
+        "error_code": "clinic_currency_not_configured"
+    },
+    "clinic_hours_end_before_start": {
+        "message": "Each hours row must end after it starts.",
+        "error_code": "clinic_hours_end_before_start"
+    },
+    "clinic_invalid_timezone": {
+        "message": "\"{}\" is not a valid time zone (for example Europe/Zurich).",
+        "error_code": "clinic_invalid_timezone"
+    },
+    "clinic_location_name_taken": {
+        "message": "Another location already uses this name.",
+        "error_code": "clinic_location_name_taken",
+        "status": 409
+    },
+    "clinic_location_not_found": {
+        "message": "The clinic location was not found.",
+        "error_code": "clinic_location_not_found",
+        "status": 404
+    },
+    "clinic_service_not_found": {
+        "message": "The treatment was not found or cannot be booked online.",
+        "error_code": "clinic_service_not_found",
+        "status": 404
+    },
+    "clinic_service_price_required": {
+        "message": "Enter a price, or choose \"on request\" or \"free\".",
+        "error_code": "clinic_service_price_required"
+    },
+    "clinic_service_slug_taken": {
+        "message": "Another treatment already uses this slug.",
+        "error_code": "clinic_service_slug_taken",
+        "status": 409
+    },
+    "clinic_setup_missing_location": {
+        "message": "Add an active location before turning on online booking.",
+        "error_code": "clinic_setup_missing_location"
+    },
+    "clinic_setup_missing_practitioner": {
+        "message": "Add a bookable practitioner with working hours who does an online treatment at one of your locations.",
+        "error_code": "clinic_setup_missing_practitioner"
+    },
+    "clinic_setup_missing_service": {
+        "message": "Add a public treatment that can be booked online before turning on online booking.",
+        "error_code": "clinic_setup_missing_service"
+    },
+    "dental_clinic_not_configured": {
+        "message": "Online booking is not available for this clinic.",
+        "error_code": "dental_clinic_not_configured",
+        "status": 404
+    },
+    "practitioner_already_exists": {
+        "message": "This staff login is already linked to another team member.",
+        "error_code": "practitioner_already_exists",
+        "status": 409
+    },
+    "practitioner_has_future_appointments": {
+        "message": "This practitioner has {} upcoming appointment(s). Move or cancel them first.",
+        "error_code": "practitioner_has_future_appointments",
+        "status": 409
+    },
+    "practitioner_not_found": {
+        "message": "The practitioner was not found.",
+        "error_code": "practitioner_not_found",
+        "status": 404
+    },
+    "practitioner_schedule_location_not_listed": {
+        "message": "Working hours can only be set for locations this person works at.",
+        "error_code": "practitioner_schedule_location_not_listed"
+    },
+    "practitioner_user_taken": {
+        "message": "This user is already linked to another practitioner profile.",
+        "error_code": "practitioner_user_taken",
+        "status": 409
+    },
+    "scheduleException_not_found": {
+        "message": "The time off entry was not found.",
+        "error_code": "scheduleException_not_found",
+        "status": 404
+    },
+    "schedule_exception_overlaps_appointments": {
+        "message": "This time overlaps appointments {}. Move or cancel them first.",
+        "error_code": "schedule_exception_overlaps_appointments",
+        "status": 409
+    },
+    "schedule_exception_target_required": {
+        "message": "Choose either a practitioner (time off) or a location (closure), not both.",
+        "error_code": "schedule_exception_target_required"
+    }
+}

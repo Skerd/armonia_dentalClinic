@@ -1,0 +1,190 @@
+{
+    "appointment_already_exists": {
+        "message": "Ky takim është rezervuar tashmë. Rifreskoni për ta parë.",
+        "error_code": "appointment_already_exists",
+        "status": 409
+    },
+    "appointment_cancel_deadline_passed": {
+        "message": "Anulimi online mbyllet {} orë para takimit. Ju lutemi telefononi klinikën.",
+        "error_code": "appointment_cancel_deadline_passed",
+        "status": 409
+    },
+    "appointment_guest_booking_disabled": {
+        "message": "Ju lutemi hyni për të rezervuar një takim.",
+        "error_code": "appointment_guest_booking_disabled"
+    },
+    "appointment_in_past": {
+        "message": "Një takim nuk mund të fillojë në të kaluarën.",
+        "error_code": "appointment_in_past"
+    },
+    "appointment_invalid_status": {
+        "message": "Ky takim nuk mund të ndryshohet më në këtë mënyrë.",
+        "error_code": "appointment_invalid_status",
+        "status": 409
+    },
+    "appointment_invalid_time": {
+        "message": "Kjo datë dhe orë nuk ekzistojnë në klinikë (ndryshim ore).",
+        "error_code": "appointment_invalid_time"
+    },
+    "appointment_no_practitioner_available": {
+        "message": "Askush nuk është më i lirë në këtë orë. Ju lutemi zgjidhni një orar tjetër.",
+        "error_code": "appointment_no_practitioner_available",
+        "status": 409
+    },
+    "appointment_not_found": {
+        "message": "Takimi nuk u gjet.",
+        "error_code": "appointment_not_found",
+        "status": 404
+    },
+    "appointment_practitioner_not_eligible": {
+        "message": "Ky mjek nuk e ofron këtë trajtim në këtë vendndodhje.",
+        "error_code": "appointment_practitioner_not_eligible"
+    },
+    "appointment_privacy_not_accepted": {
+        "message": "Ju lutemi pranoni njoftimin e privatësisë për të rezervuar.",
+        "error_code": "appointment_privacy_not_accepted"
+    },
+    "appointment_reschedule_deadline_passed": {
+        "message": "Ndryshimet online mbyllen {} orë para takimit. Ju lutemi telefononi klinikën.",
+        "error_code": "appointment_reschedule_deadline_passed",
+        "status": 409
+    },
+    "appointment_slot_unavailable": {
+        "message": "Ky orar nuk është më i lirë. Ju lutemi zgjidhni një orar tjetër.",
+        "error_code": "appointment_slot_unavailable",
+        "status": 409
+    },
+    "appointment_too_early_to_close": {
+        "message": "Kjo mund të regjistrohet vetëm pasi të ketë filluar takimi.",
+        "error_code": "appointment_too_early_to_close"
+    },
+    "appointment_too_far_ahead": {
+        "message": "Takimet mund të rezervohen më së shumti {} ditë përpara.",
+        "error_code": "appointment_too_far_ahead"
+    },
+    "appointment_too_soon": {
+        "message": "Takimet duhet të rezervohen të paktën {} orë përpara.",
+        "error_code": "appointment_too_soon"
+    },
+    "clinicConfig_already_exists": {
+        "message": "Cilësimet e klinikës ekzistojnë tashmë për këtë biznes.",
+        "error_code": "clinicConfig_already_exists",
+        "status": 409
+    },
+    "clinicConfig_not_found": {
+        "message": "Cilësimet e klinikës nuk u gjetën.",
+        "error_code": "clinicConfig_not_found",
+        "status": 404
+    },
+    "clinicLocation_already_exists": {
+        "message": "Një vendndodhje tjetër e përdor tashmë këtë emër.",
+        "error_code": "clinicLocation_already_exists",
+        "status": 409
+    },
+    "clinicLocation_not_found": {
+        "message": "Vendndodhja e klinikës nuk u gjet.",
+        "error_code": "clinicLocation_not_found",
+        "status": 404
+    },
+    "clinicService_already_exists": {
+        "message": "Një trajtim tjetër e përdor tashmë këtë emër adrese web.",
+        "error_code": "clinicService_already_exists",
+        "status": 409
+    },
+    "clinicService_not_found": {
+        "message": "Trajtimi nuk u gjet.",
+        "error_code": "clinicService_not_found",
+        "status": 404
+    },
+    "clinic_currency_not_configured": {
+        "message": "Shtoni një monedhë para se të konfiguroni rezervimin online.",
+        "error_code": "clinic_currency_not_configured"
+    },
+    "clinic_hours_end_before_start": {
+        "message": "Çdo rresht orari duhet të mbarojë pasi fillon.",
+        "error_code": "clinic_hours_end_before_start"
+    },
+    "clinic_invalid_timezone": {
+        "message": "\"{}\" nuk është zonë kohore e vlefshme (p.sh. Europe/Zurich).",
+        "error_code": "clinic_invalid_timezone"
+    },
+    "clinic_location_name_taken": {
+        "message": "Një vendndodhje tjetër e përdor tashmë këtë emër.",
+        "error_code": "clinic_location_name_taken",
+        "status": 409
+    },
+    "clinic_location_not_found": {
+        "message": "Vendndodhja e klinikës nuk u gjet.",
+        "error_code": "clinic_location_not_found",
+        "status": 404
+    },
+    "clinic_service_not_found": {
+        "message": "Trajtimi nuk u gjet ose nuk mund të rezervohet online.",
+        "error_code": "clinic_service_not_found",
+        "status": 404
+    },
+    "clinic_service_price_required": {
+        "message": "Vendosni një çmim ose zgjidhni \"me kërkesë\" ose \"falas\".",
+        "error_code": "clinic_service_price_required"
+    },
+    "clinic_service_slug_taken": {
+        "message": "Një trajtim tjetër e përdor tashmë këtë slug.",
+        "error_code": "clinic_service_slug_taken",
+        "status": 409
+    },
+    "clinic_setup_missing_location": {
+        "message": "Shtoni një vendndodhje aktive para se të aktivizoni rezervimin online.",
+        "error_code": "clinic_setup_missing_location"
+    },
+    "clinic_setup_missing_practitioner": {
+        "message": "Shtoni një mjek të rezervueshëm me orar pune që kryen një trajtim online në një nga vendndodhjet tuaja.",
+        "error_code": "clinic_setup_missing_practitioner"
+    },
+    "clinic_setup_missing_service": {
+        "message": "Shtoni një trajtim publik që rezervohet online para se të aktivizoni rezervimin online.",
+        "error_code": "clinic_setup_missing_service"
+    },
+    "dental_clinic_not_configured": {
+        "message": "Rezervimi online nuk është i disponueshëm për këtë klinikë.",
+        "error_code": "dental_clinic_not_configured",
+        "status": 404
+    },
+    "practitioner_already_exists": {
+        "message": "Ky hyrje është lidhur tashmë me një anëtar tjetër të ekipit.",
+        "error_code": "practitioner_already_exists",
+        "status": 409
+    },
+    "practitioner_has_future_appointments": {
+        "message": "Ky mjek ka {} takim(e) të ardhshme. Zhvendosini ose anulojini fillimisht.",
+        "error_code": "practitioner_has_future_appointments",
+        "status": 409
+    },
+    "practitioner_not_found": {
+        "message": "Mjeku nuk u gjet.",
+        "error_code": "practitioner_not_found",
+        "status": 404
+    },
+    "practitioner_schedule_location_not_listed": {
+        "message": "Orari i punës mund të vendoset vetëm për vendndodhjet ku punon ky person.",
+        "error_code": "practitioner_schedule_location_not_listed"
+    },
+    "practitioner_user_taken": {
+        "message": "Ky përdorues është lidhur tashmë me një profil tjetër mjeku.",
+        "error_code": "practitioner_user_taken",
+        "status": 409
+    },
+    "scheduleException_not_found": {
+        "message": "Mungesa nuk u gjet.",
+        "error_code": "scheduleException_not_found",
+        "status": 404
+    },
+    "schedule_exception_overlaps_appointments": {
+        "message": "Kjo kohë mbivendoset me takimet {}. Zhvendosini ose anulojini fillimisht.",
+        "error_code": "schedule_exception_overlaps_appointments",
+        "status": 409
+    },
+    "schedule_exception_target_required": {
+        "message": "Zgjidhni ose një mjek (mungesë) ose një vendndodhje (mbyllje), jo të dyja.",
+        "error_code": "schedule_exception_target_required"
+    }
+}
