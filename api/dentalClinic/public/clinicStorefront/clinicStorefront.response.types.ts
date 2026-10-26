@@ -101,6 +101,18 @@ export type PublicAppointment = {
     canReschedule: boolean;
 };
 
+/** A portal account's appointments across clinics, each with its clinic and manage link token. */
+export type MyAppointmentsResponse = {
+    data: {
+        appointment: PublicAppointment;
+        company: {
+            name: string;
+            slug: string
+        };
+        manageToken: string
+    }[];
+};
+
 export type AppointmentBookingResponse = {
     data: {
         appointment: PublicAppointment;

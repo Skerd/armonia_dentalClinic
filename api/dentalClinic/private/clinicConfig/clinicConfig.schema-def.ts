@@ -13,6 +13,7 @@ export const CLINIC_PRIVACY_TEXT_MAX = 20000;
 
 export const ClinicConfigSchemaDef = {
     publicBookingEnabled:      {type: "boolean", required: false},
+    listedOnPortal:            {type: "boolean", required: false},
     currency:                  {type: "objectId", required: true},
     slotIntervalMinutes:       {type: "number", required: true, ...CLINIC_SLOT_INTERVAL_MINUTES},
     minNoticeHours:            {type: "number", required: true, ...CLINIC_NOTICE_HOURS},

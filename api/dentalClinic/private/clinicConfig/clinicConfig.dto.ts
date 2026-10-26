@@ -5,6 +5,7 @@ import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
 export type ClinicConfig = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     publicBookingEnabled: boolean;
+    listedOnPortal: boolean;
     currency?: CurrencySimple;
     slotIntervalMinutes: number;
     minNoticeHours: number;
