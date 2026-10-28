@@ -8,6 +8,7 @@ export type ClinicService = DeletedData & OwnershipData & LifeCycleData & {
     slug: string;
     description?: string;
     images?: Media[];
+    videos?: Media[];
     durationMinutes: number;
     bufferBeforeMinutes: number;
     bufferAfterMinutes: number;

@@ -21,6 +21,7 @@ export type ClinicStorefrontService = {
     slug: string;
     description?: string;
     images: string[];
+    videos: string[];
     durationMinutes: number;
     priceType: ClinicServicePriceType;
     price?: number;

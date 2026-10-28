@@ -15,6 +15,7 @@ export const ClinicServiceSchemaDef = {
     slug:                {type: "string", required: true, min: 1, max: CLINIC_SERVICE_SLUG_MAX, format: "slug"},
     description:         {type: "string", required: false, max: CLINIC_SERVICE_DESCRIPTION_MAX},
     images:              {type: "mediaIdArray", required: false, publicAccess: true},
+    videos:              {type: "mediaIdArray", required: false, publicAccess: true},
     durationMinutes:     {type: "number", required: true, ...CLINIC_SERVICE_DURATION_MINUTES},
     /** Preparation and clean-up around the treatment; the dentist is busy, the patient is not there. */
     bufferBeforeMinutes: {type: "number", required: false, ...CLINIC_SERVICE_BUFFER_MINUTES},
