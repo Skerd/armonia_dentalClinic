@@ -149,6 +149,66 @@
         "error_code": "dental_clinic_not_configured",
         "status": 404
     },
+    "inquiry_clinic_count_invalid": {
+        "message": "Wählen Sie zwischen 1 und {} Praxen.",
+        "error_code": "inquiry_clinic_count_invalid",
+        "status": 400
+    },
+    "inquiry_clinic_not_available": {
+        "message": "Eine der Praxen nimmt hier keine Anfragen mehr an. Aktualisieren Sie die Liste.",
+        "error_code": "inquiry_clinic_not_available",
+        "status": 409
+    },
+    "inquiry_consent_required": {
+        "message": "Bitte stimmen Sie zu, Ihre Anfrage mit den gewählten Praxen zu teilen.",
+        "error_code": "inquiry_consent_required",
+        "status": 400
+    },
+    "inquiry_contact_not_shared": {
+        "message": "Der Patient hat seine Kontaktdaten noch nicht freigegeben. Bitten Sie ihn im Verlauf darum.",
+        "error_code": "inquiry_contact_not_shared",
+        "status": 409
+    },
+    "inquiry_file_not_found": {
+        "message": "Eine der Dateien fehlt. Bitte laden Sie sie erneut hoch.",
+        "error_code": "inquiry_file_not_found",
+        "status": 404
+    },
+    "inquiry_invalid_info_kinds": {
+        "message": "Wählen Sie aus, was Sie vom Patienten benötigen.",
+        "error_code": "inquiry_invalid_info_kinds",
+        "status": 400
+    },
+    "inquiry_invalid_status": {
+        "message": "Diese Anfrage kann so nicht mehr geändert werden.",
+        "error_code": "inquiry_invalid_status",
+        "status": 409
+    },
+    "inquiry_invalid_treatments": {
+        "message": "Wählen Sie mindestens eine Behandlung aus der Liste.",
+        "error_code": "inquiry_invalid_treatments",
+        "status": 400
+    },
+    "inquiry_not_found": {
+        "message": "Diese Kostenanfrage existiert nicht oder wurde gelöscht.",
+        "error_code": "inquiry_not_found",
+        "status": 404
+    },
+    "inquiry_travel_window_invalid": {
+        "message": "Das Ende Ihres Reisezeitraums muss nach dem Beginn liegen.",
+        "error_code": "inquiry_travel_window_invalid",
+        "status": 400
+    },
+    "patient_already_exists": {
+        "message": "Für diese Person gibt es in dieser Praxis bereits eine Patientenakte.",
+        "error_code": "patient_already_exists",
+        "status": 409
+    },
+    "patient_not_found": {
+        "message": "Diese Patientenakte existiert nicht oder wurde gelöscht.",
+        "error_code": "patient_not_found",
+        "status": 404
+    },
     "practitioner_already_exists": {
         "message": "Dieses Benutzerkonto ist bereits mit einem anderen Teammitglied verknüpft.",
         "error_code": "practitioner_already_exists",
@@ -186,5 +246,45 @@
     "schedule_exception_target_required": {
         "message": "Wählen Sie entweder eine Fachperson (Abwesenheit) oder einen Standort (Schliessung), nicht beides.",
         "error_code": "schedule_exception_target_required"
+    },
+    "treatment_plan_deposit_invalid": {
+        "message": "Geben Sie einen Anzahlungsbetrag oder einen Prozentsatz bis 100 an.",
+        "error_code": "treatment_plan_deposit_invalid",
+        "status": 400
+    },
+    "treatment_plan_expired": {
+        "message": "Dieser Kostenvoranschlag ist abgelaufen. Bitten Sie die Praxis um einen neuen.",
+        "error_code": "treatment_plan_expired",
+        "status": 409
+    },
+    "treatment_plan_invalid_status": {
+        "message": "Dieser Kostenvoranschlag kann so nicht mehr geändert werden.",
+        "error_code": "treatment_plan_invalid_status",
+        "status": 409
+    },
+    "treatment_plan_line_phase_invalid": {
+        "message": "Eine Position gehört zu Phase {}, die der Plan nicht hat.",
+        "error_code": "treatment_plan_line_phase_invalid",
+        "status": 400
+    },
+    "treatment_plan_not_found": {
+        "message": "Dieser Kostenvoranschlag existiert nicht oder wurde gelöscht.",
+        "error_code": "treatment_plan_not_found",
+        "status": 404
+    },
+    "treatment_plan_target_required": {
+        "message": "Ein Kostenvoranschlag gehört zu einer Anfrage oder einem Patienten: wählen Sie eines.",
+        "error_code": "treatment_plan_target_required",
+        "status": 400
+    },
+    "treatment_plan_terms_required": {
+        "message": "Bitte bestätigen Sie, dass Sie den Kostenvoranschlag und die Bedingungen annehmen.",
+        "error_code": "treatment_plan_terms_required",
+        "status": 400
+    },
+    "treatment_plan_tooth_invalid": {
+        "message": "{} ist keine Zahnnummer nach FDI.",
+        "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
     }
 }

@@ -1,12 +1,15 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
 import type {Media} from "../../../../../core/types";
 import type {ClinicServicePriceType} from "./clinicService.schema-def";
+import type {TreatmentCategory} from "../../../../constants";
 
 export type ClinicService = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name: string;
     slug: string;
     description?: string;
+    category: TreatmentCategory;
+    perTooth: boolean;
     images?: Media[];
     videos?: Media[];
     durationMinutes: number;

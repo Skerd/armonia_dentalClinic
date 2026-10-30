@@ -32,6 +32,8 @@ export const CreateAppointmentFormDef = {
     practitioner:   {type: "objectId", required: true},
     ...AppointmentStartDef,
     patient:        {type: "embedded", required: true, items: AppointmentPatientDef},
+    /** The patient's existing folder; left empty, one is found or opened from the contact above. */
+    patientRecord:  {type: "objectId", required: false},
     customer:       {type: "objectId", required: false},
     note:           {type: "string", required: false, max: APPOINTMENT_NOTE_MAX},
     idempotencyKey: {type: "string", required: true, ...APPOINTMENT_IDEMPOTENCY_KEY},

@@ -1,4 +1,5 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {PatientSimple} from "../../../../dto/patient.dto";
 import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
 import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
 import type {ClinicLocationSimple} from "../../../../dto/clinicLocation.dto";
@@ -35,6 +36,7 @@ export type Appointment = DeletedData & OwnershipData & LifeCycleData & {
     location?: ClinicLocationSimple;
     practitioner?: PractitionerSimple;
     customer?: SimpleBlankUser;
+    patientRecord?: PatientSimple;
     startAt: string;
     endAt: string;
     patient: AppointmentPatient;

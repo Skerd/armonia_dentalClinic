@@ -4,6 +4,21 @@ import type {ClinicServicePriceType} from "../../private/clinicService/clinicSer
 import type {PractitionerRole} from "../../private/practitioner/practitioner.schema-def";
 import type {AppointmentPatient} from "../../private/appointment/appointment.dto";
 import type {AppointmentStatus} from "../../private/appointment/appointment.constants";
+import type {ClinicAccreditation} from "../../private/clinicConfig/clinicConfig.dto";
+import type {TreatmentCategory} from "../../../../constants";
+
+/** The clinic's tourism profile, its texts in the visitor's language (else the first one written). */
+export type ClinicStorefrontProfile = {
+    headline?: string;
+    description?: string;
+    warrantyPolicy?: string;
+    travelInfo?: string;
+    languagesSpoken: string[];
+    implantBrands: string[];
+    nearestAirport?: string;
+    accreditations: ClinicAccreditation[];
+    gallery: string[];
+};
 
 export type ClinicStorefrontLocation = {
     _id: string;
@@ -19,6 +34,7 @@ export type ClinicStorefrontService = {
     _id: string;
     name: string;
     slug: string;
+    category: TreatmentCategory;
     description?: string;
     images: string[];
     videos: string[];
@@ -43,8 +59,12 @@ export type ClinicStorefrontPractitioner = {
 /** Everything the public site needs before the first availability search. */
 export type ClinicStorefrontConfigResponse = {
     data: {
-        company: {name: string; logo?: string; email?: string; phoneNumber?: string; website?: string};
+        company: {_id: string; name: string; logo?: string; email?: string; phoneNumber?: string; website?: string};
         currency: CurrencySimple;
+        /** Online booking is on; a clinic may take only estimate requests. */
+        publicBookingEnabled: boolean;
+        inquiriesEnabled: boolean;
+        profile: ClinicStorefrontProfile;
         guestBookingAllowed: boolean;
         requireStaffConfirmation: boolean;
         patientNoteEnabled: boolean;

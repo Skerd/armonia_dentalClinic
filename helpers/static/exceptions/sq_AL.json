@@ -149,6 +149,66 @@
         "error_code": "dental_clinic_not_configured",
         "status": 404
     },
+    "inquiry_clinic_count_invalid": {
+        "message": "Zgjidhni nga 1 deri në {} klinika.",
+        "error_code": "inquiry_clinic_count_invalid",
+        "status": 400
+    },
+    "inquiry_clinic_not_available": {
+        "message": "Një nga klinikat nuk pranon më kërkesa këtu. Rifreskoni listën dhe provoni përsëri.",
+        "error_code": "inquiry_clinic_not_available",
+        "status": 409
+    },
+    "inquiry_consent_required": {
+        "message": "Ju lutemi pranoni të ndani kërkesën tuaj me klinikat e zgjedhura.",
+        "error_code": "inquiry_consent_required",
+        "status": 400
+    },
+    "inquiry_contact_not_shared": {
+        "message": "Pacienti nuk i ka ndarë ende të dhënat e kontaktit. Kërkojani në bisedë.",
+        "error_code": "inquiry_contact_not_shared",
+        "status": 409
+    },
+    "inquiry_file_not_found": {
+        "message": "Një nga skedarët mungon. Ngarkojeni përsëri.",
+        "error_code": "inquiry_file_not_found",
+        "status": 404
+    },
+    "inquiry_invalid_info_kinds": {
+        "message": "Zgjidhni çfarë ju nevojitet nga pacienti.",
+        "error_code": "inquiry_invalid_info_kinds",
+        "status": 400
+    },
+    "inquiry_invalid_status": {
+        "message": "Kjo kërkesë nuk mund të ndryshohet më në këtë mënyrë.",
+        "error_code": "inquiry_invalid_status",
+        "status": 409
+    },
+    "inquiry_invalid_treatments": {
+        "message": "Zgjidhni të paktën një trajtim nga lista.",
+        "error_code": "inquiry_invalid_treatments",
+        "status": 400
+    },
+    "inquiry_not_found": {
+        "message": "Kjo kërkesë për ofertë nuk ekziston ose është fshirë.",
+        "error_code": "inquiry_not_found",
+        "status": 404
+    },
+    "inquiry_travel_window_invalid": {
+        "message": "Fundi i periudhës së udhëtimit duhet të jetë pas fillimit.",
+        "error_code": "inquiry_travel_window_invalid",
+        "status": 400
+    },
+    "patient_already_exists": {
+        "message": "Ky pacient ka tashmë një kartelë në këtë klinikë.",
+        "error_code": "patient_already_exists",
+        "status": 409
+    },
+    "patient_not_found": {
+        "message": "Kjo kartelë pacienti nuk ekziston ose është fshirë.",
+        "error_code": "patient_not_found",
+        "status": 404
+    },
     "practitioner_already_exists": {
         "message": "Ky hyrje është lidhur tashmë me një anëtar tjetër të ekipit.",
         "error_code": "practitioner_already_exists",
@@ -186,5 +246,45 @@
     "schedule_exception_target_required": {
         "message": "Zgjidhni ose një mjek (mungesë) ose një vendndodhje (mbyllje), jo të dyja.",
         "error_code": "schedule_exception_target_required"
+    },
+    "treatment_plan_deposit_invalid": {
+        "message": "Vendosni shumën e paradhënies ose një përqindje deri në 100.",
+        "error_code": "treatment_plan_deposit_invalid",
+        "status": 400
+    },
+    "treatment_plan_expired": {
+        "message": "Kjo ofertë ka skaduar. Kërkojini klinikës një të re.",
+        "error_code": "treatment_plan_expired",
+        "status": 409
+    },
+    "treatment_plan_invalid_status": {
+        "message": "Kjo ofertë nuk mund të ndryshohet më në këtë mënyrë.",
+        "error_code": "treatment_plan_invalid_status",
+        "status": 409
+    },
+    "treatment_plan_line_phase_invalid": {
+        "message": "Një rresht i përket fazës {}, që plani nuk e ka.",
+        "error_code": "treatment_plan_line_phase_invalid",
+        "status": 400
+    },
+    "treatment_plan_not_found": {
+        "message": "Kjo ofertë nuk ekziston ose është fshirë.",
+        "error_code": "treatment_plan_not_found",
+        "status": 404
+    },
+    "treatment_plan_target_required": {
+        "message": "Një ofertë i përgjigjet një kërkese ose i përket një pacienti: zgjidhni njërën.",
+        "error_code": "treatment_plan_target_required",
+        "status": 400
+    },
+    "treatment_plan_terms_required": {
+        "message": "Ju lutemi konfirmoni që pranoni ofertën dhe kushtet e saj.",
+        "error_code": "treatment_plan_terms_required",
+        "status": 400
+    },
+    "treatment_plan_tooth_invalid": {
+        "message": "{} nuk është numër dhëmbi sipas FDI.",
+        "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
     }
 }

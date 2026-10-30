@@ -149,6 +149,66 @@
         "error_code": "dental_clinic_not_configured",
         "status": 404
     },
+    "inquiry_clinic_count_invalid": {
+        "message": "Choose between 1 and {} clinics.",
+        "error_code": "inquiry_clinic_count_invalid",
+        "status": 400
+    },
+    "inquiry_clinic_not_available": {
+        "message": "One of the clinics no longer takes requests here. Refresh the list and try again.",
+        "error_code": "inquiry_clinic_not_available",
+        "status": 409
+    },
+    "inquiry_consent_required": {
+        "message": "Please agree to share your request with the chosen clinics.",
+        "error_code": "inquiry_consent_required",
+        "status": 400
+    },
+    "inquiry_contact_not_shared": {
+        "message": "The patient has not shared their contact details yet. Ask them to do so in the thread.",
+        "error_code": "inquiry_contact_not_shared",
+        "status": 409
+    },
+    "inquiry_file_not_found": {
+        "message": "One of the files is missing. Upload it again.",
+        "error_code": "inquiry_file_not_found",
+        "status": 404
+    },
+    "inquiry_invalid_info_kinds": {
+        "message": "Choose what you need from the patient.",
+        "error_code": "inquiry_invalid_info_kinds",
+        "status": 400
+    },
+    "inquiry_invalid_status": {
+        "message": "This request can no longer be changed this way.",
+        "error_code": "inquiry_invalid_status",
+        "status": 409
+    },
+    "inquiry_invalid_treatments": {
+        "message": "Choose at least one treatment from the list.",
+        "error_code": "inquiry_invalid_treatments",
+        "status": 400
+    },
+    "inquiry_not_found": {
+        "message": "This estimate request does not exist or was deleted.",
+        "error_code": "inquiry_not_found",
+        "status": 404
+    },
+    "inquiry_travel_window_invalid": {
+        "message": "The end of your travel window must be after its start.",
+        "error_code": "inquiry_travel_window_invalid",
+        "status": 400
+    },
+    "patient_already_exists": {
+        "message": "This patient already has a folder at this clinic.",
+        "error_code": "patient_already_exists",
+        "status": 409
+    },
+    "patient_not_found": {
+        "message": "This patient folder does not exist or was deleted.",
+        "error_code": "patient_not_found",
+        "status": 404
+    },
     "practitioner_already_exists": {
         "message": "This staff login is already linked to another team member.",
         "error_code": "practitioner_already_exists",
@@ -186,5 +246,45 @@
     "schedule_exception_target_required": {
         "message": "Choose either a practitioner (time off) or a location (closure), not both.",
         "error_code": "schedule_exception_target_required"
+    },
+    "treatment_plan_deposit_invalid": {
+        "message": "Enter a deposit amount, or a percentage of at most 100.",
+        "error_code": "treatment_plan_deposit_invalid",
+        "status": 400
+    },
+    "treatment_plan_expired": {
+        "message": "This quote has expired. Ask the clinic for an updated one.",
+        "error_code": "treatment_plan_expired",
+        "status": 409
+    },
+    "treatment_plan_invalid_status": {
+        "message": "This quote can no longer be changed this way.",
+        "error_code": "treatment_plan_invalid_status",
+        "status": 409
+    },
+    "treatment_plan_line_phase_invalid": {
+        "message": "A line belongs to phase {}, which the plan does not have.",
+        "error_code": "treatment_plan_line_phase_invalid",
+        "status": 400
+    },
+    "treatment_plan_not_found": {
+        "message": "This quote does not exist or was deleted.",
+        "error_code": "treatment_plan_not_found",
+        "status": 404
+    },
+    "treatment_plan_target_required": {
+        "message": "A quote answers an estimate request or belongs to a patient: choose one.",
+        "error_code": "treatment_plan_target_required",
+        "status": 400
+    },
+    "treatment_plan_terms_required": {
+        "message": "Please confirm that you accept the quote and its terms.",
+        "error_code": "treatment_plan_terms_required",
+        "status": 400
+    },
+    "treatment_plan_tooth_invalid": {
+        "message": "{} is not a tooth number in FDI notation.",
+        "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
     }
 }

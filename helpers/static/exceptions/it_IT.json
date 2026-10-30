@@ -149,6 +149,66 @@
         "error_code": "dental_clinic_not_configured",
         "status": 404
     },
+    "inquiry_clinic_count_invalid": {
+        "message": "Scegli tra 1 e {} cliniche.",
+        "error_code": "inquiry_clinic_count_invalid",
+        "status": 400
+    },
+    "inquiry_clinic_not_available": {
+        "message": "Una delle cliniche non accetta più richieste qui. Aggiorna l'elenco e riprova.",
+        "error_code": "inquiry_clinic_not_available",
+        "status": 409
+    },
+    "inquiry_consent_required": {
+        "message": "Accetta di condividere la tua richiesta con le cliniche scelte.",
+        "error_code": "inquiry_consent_required",
+        "status": 400
+    },
+    "inquiry_contact_not_shared": {
+        "message": "Il paziente non ha ancora condiviso i suoi contatti. Chiediglielo nella conversazione.",
+        "error_code": "inquiry_contact_not_shared",
+        "status": 409
+    },
+    "inquiry_file_not_found": {
+        "message": "Uno dei file manca. Caricalo di nuovo.",
+        "error_code": "inquiry_file_not_found",
+        "status": 404
+    },
+    "inquiry_invalid_info_kinds": {
+        "message": "Scegli cosa ti serve dal paziente.",
+        "error_code": "inquiry_invalid_info_kinds",
+        "status": 400
+    },
+    "inquiry_invalid_status": {
+        "message": "Questa richiesta non può più essere modificata in questo modo.",
+        "error_code": "inquiry_invalid_status",
+        "status": 409
+    },
+    "inquiry_invalid_treatments": {
+        "message": "Scegli almeno un trattamento dall'elenco.",
+        "error_code": "inquiry_invalid_treatments",
+        "status": 400
+    },
+    "inquiry_not_found": {
+        "message": "Questa richiesta di preventivo non esiste o è stata eliminata.",
+        "error_code": "inquiry_not_found",
+        "status": 404
+    },
+    "inquiry_travel_window_invalid": {
+        "message": "La fine del periodo di viaggio deve essere dopo l'inizio.",
+        "error_code": "inquiry_travel_window_invalid",
+        "status": 400
+    },
+    "patient_already_exists": {
+        "message": "Questo paziente ha già una cartella in questa clinica.",
+        "error_code": "patient_already_exists",
+        "status": 409
+    },
+    "patient_not_found": {
+        "message": "Questa cartella paziente non esiste o è stata eliminata.",
+        "error_code": "patient_not_found",
+        "status": 404
+    },
     "practitioner_already_exists": {
         "message": "Questo accesso è già collegato a un altro membro del team.",
         "error_code": "practitioner_already_exists",
@@ -186,5 +246,45 @@
     "schedule_exception_target_required": {
         "message": "Scegli un professionista (assenza) oppure una sede (chiusura), non entrambi.",
         "error_code": "schedule_exception_target_required"
+    },
+    "treatment_plan_deposit_invalid": {
+        "message": "Indica un importo di acconto o una percentuale fino a 100.",
+        "error_code": "treatment_plan_deposit_invalid",
+        "status": 400
+    },
+    "treatment_plan_expired": {
+        "message": "Questo preventivo è scaduto. Chiedine uno aggiornato alla clinica.",
+        "error_code": "treatment_plan_expired",
+        "status": 409
+    },
+    "treatment_plan_invalid_status": {
+        "message": "Questo preventivo non può più essere modificato in questo modo.",
+        "error_code": "treatment_plan_invalid_status",
+        "status": 409
+    },
+    "treatment_plan_line_phase_invalid": {
+        "message": "Una riga appartiene alla fase {}, che il piano non ha.",
+        "error_code": "treatment_plan_line_phase_invalid",
+        "status": 400
+    },
+    "treatment_plan_not_found": {
+        "message": "Questo preventivo non esiste o è stato eliminato.",
+        "error_code": "treatment_plan_not_found",
+        "status": 404
+    },
+    "treatment_plan_target_required": {
+        "message": "Un preventivo risponde a una richiesta o riguarda un paziente: scegline uno.",
+        "error_code": "treatment_plan_target_required",
+        "status": 400
+    },
+    "treatment_plan_terms_required": {
+        "message": "Conferma di accettare il preventivo e le sue condizioni.",
+        "error_code": "treatment_plan_terms_required",
+        "status": 400
+    },
+    "treatment_plan_tooth_invalid": {
+        "message": "{} non è un numero di dente FDI.",
+        "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
     }
 }
