@@ -199,6 +199,11 @@
         "error_code": "inquiry_travel_window_invalid",
         "status": 400
     },
+    "medical_history_incomplete": {
+        "message": "Répondez à toutes les questions des antécédents médicaux.",
+        "error_code": "medical_history_incomplete",
+        "status": 400
+    },
     "patient_already_exists": {
         "message": "Ce patient a déjà un dossier dans ce cabinet.",
         "error_code": "patient_already_exists",
@@ -208,6 +213,36 @@
         "message": "Ce dossier patient n'existe pas ou a été supprimé.",
         "error_code": "patient_not_found",
         "status": 404
+    },
+    "patient_trip_closed": {
+        "message": "Ce voyage est terminé ou annulé ; il ne peut plus être modifié.",
+        "error_code": "patient_trip_closed",
+        "status": 409
+    },
+    "patient_trip_not_found": {
+        "message": "Ce voyage n'existe pas ou a été supprimé.",
+        "error_code": "patient_trip_not_found",
+        "status": 404
+    },
+    "patient_trip_phase_invalid": {
+        "message": "Le plan compte {} phase(s).",
+        "error_code": "patient_trip_phase_invalid",
+        "status": 400
+    },
+    "patient_trip_phase_without_plan": {
+        "message": "Choisissez le plan de traitement auquel appartient la phase.",
+        "error_code": "patient_trip_phase_without_plan",
+        "status": 400
+    },
+    "patient_trip_plan_invalid": {
+        "message": "Le plan doit être le plan de traitement accepté par ce patient.",
+        "error_code": "patient_trip_plan_invalid",
+        "status": 400
+    },
+    "patient_trip_too_early": {
+        "message": "Cette phase peut commencer au plus tôt le {} : {} jours de cicatrisation après le voyage précédent.",
+        "error_code": "patient_trip_too_early",
+        "status": 400
     },
     "practitioner_already_exists": {
         "message": "Cet identifiant est déjà lié à un autre membre de l'équipe.",
@@ -271,6 +306,26 @@
         "message": "Ce devis n'existe pas ou a été supprimé.",
         "error_code": "treatment_plan_not_found",
         "status": 404
+    },
+    "treatment_plan_nothing_to_pay": {
+        "message": "Il ne reste rien à payer en ligne sur ce plan.",
+        "error_code": "treatment_plan_nothing_to_pay",
+        "status": 409
+    },
+    "treatment_plan_online_payment_unavailable": {
+        "message": "Le paiement par carte n'est pas disponible pour le moment. La clinique vous indiquera comment verser l'acompte.",
+        "error_code": "treatment_plan_online_payment_unavailable",
+        "status": 409
+    },
+    "treatment_plan_payment_exceeds_due": {
+        "message": "Le paiement dépasse les {} encore dus.",
+        "error_code": "treatment_plan_payment_exceeds_due",
+        "status": 400
+    },
+    "treatment_plan_refund_exceeds_paid": {
+        "message": "Le remboursement dépasse les {} payés.",
+        "error_code": "treatment_plan_refund_exceeds_paid",
+        "status": 400
     },
     "treatment_plan_target_required": {
         "message": "Un devis répond à une demande ou concerne un patient : choisissez l'un des deux.",

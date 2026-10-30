@@ -52,6 +52,33 @@ export const INQUIRY_OPEN_STATUSES: readonly InquiryStatus[] = ["new", "in_revie
 export const INFO_REQUEST_KINDS = ["opg", "cbct", "photos", "medical_history", "other"] as const;
 export type InfoRequestKind = (typeof INFO_REQUEST_KINDS)[number];
 
+/**
+ * The medical-history questionnaire a patient fills in for their request: what a clinic must know
+ * before quoting implants or surgery. Changing the questions means a new version.
+ */
+/** A patient's stay for treatment; `completed` once they flew home. */
+export const PATIENT_TRIP_STATUSES = ["planned", "confirmed", "completed", "cancelled"] as const;
+export type PatientTripStatus = (typeof PATIENT_TRIP_STATUSES)[number];
+
+export const MEDICAL_HISTORY_VERSION = "2026-10";
+export const MEDICAL_HISTORY_QUESTIONS = [
+    "allergies",
+    "anticoagulants",
+    "bisphosphonates",
+    "diabetes",
+    "heart_condition",
+    "high_blood_pressure",
+    "bleeding_disorder",
+    "infectious_disease",
+    "pregnancy",
+    "smoking",
+] as const;
+export type MedicalHistoryQuestion = (typeof MEDICAL_HISTORY_QUESTIONS)[number];
+export const MEDICAL_HISTORY_ANSWERS = ["no", "yes", "unsure"] as const;
+export type MedicalHistoryAnswer = (typeof MEDICAL_HISTORY_ANSWERS)[number];
+export const MEDICAL_HISTORY_DETAIL_MAX = 300;
+export const MEDICAL_HISTORY_MEDICATIONS_MAX = 1000;
+
 /** One request goes to at most this many clinics. */
 export const INQUIRY_MAX_CLINICS = 5;
 export const INQUIRY_DESCRIPTION_MAX = 4000;
@@ -85,6 +112,13 @@ export type TreatmentPlanLineKind = (typeof TREATMENT_PLAN_LINE_KINDS)[number];
 
 export const DEPOSIT_TYPES = ["none", "fixed", "percent"] as const;
 export type DepositType = (typeof DEPOSIT_TYPES)[number];
+
+/**
+ * What an accepted plan's patient has paid, derived from the payments only. `pending` is an
+ * online deposit waiting for the gateway; `deposit_paid` covers the deposit, not the total.
+ */
+export const TREATMENT_PLAN_PAYMENT_STATUSES = ["unpaid", "pending", "failed", "deposit_paid", "paid", "partially_refunded", "refunded"] as const;
+export type TreatmentPlanPaymentStatus = (typeof TREATMENT_PLAN_PAYMENT_STATUSES)[number];
 
 /** Teeth in FDI (ISO 3950) notation: permanent 11–48, then primary 51–85. */
 export const FDI_PERMANENT_TEETH = [

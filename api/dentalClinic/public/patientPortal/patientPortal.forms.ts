@@ -1,5 +1,16 @@
 import type {InferCreateForm} from "../../../../../core/helpers/schemaDefBuilder";
-import {CLINIC_MESSAGE_ATTACHMENTS_MAX, CLINIC_MESSAGE_BODY_MAX, INFO_REQUEST_KINDS, INQUIRY_FILES_MAX, INQUIRY_MAX_CLINICS} from "../../../../constants";
+import {
+    CLINIC_MESSAGE_ATTACHMENTS_MAX,
+    CLINIC_MESSAGE_BODY_MAX,
+    INFO_REQUEST_KINDS,
+    INQUIRY_FILES_MAX,
+    INQUIRY_MAX_CLINICS,
+    MEDICAL_HISTORY_ANSWERS,
+    MEDICAL_HISTORY_DETAIL_MAX,
+    MEDICAL_HISTORY_MEDICATIONS_MAX,
+    MEDICAL_HISTORY_QUESTIONS,
+} from "../../../../constants";
+import {PATIENT_TRIP_ACCOMMODATION_MAX, PATIENT_TRIP_FLIGHT_MAX} from "../../private/patientTrip/patientTrip.schema-def";
 import {APPOINTMENT_IDEMPOTENCY_KEY} from "../../private/appointment/appointment.constants";
 import {InquiryContactDef, InquiryRequestDef} from "../../private/clinicInquiry/clinicInquiry.schema-def";
 
@@ -59,3 +70,33 @@ export const AcceptTreatmentPlanFormDef = {
     acceptTerms: {type: "boolean", required: true},
 } as const;
 export type AcceptTreatmentPlanFormType = InferCreateForm<typeof AcceptTreatmentPlanFormDef>;
+
+/** Starts the online payment of an accepted plan's deposit. */
+export const PayPlanDepositFormDef = {
+    plan: {type: "objectId", required: true},
+} as const;
+export type PayPlanDepositFormType = InferCreateForm<typeof PayPlanDepositFormDef>;
+
+export const MedicalHistoryAnswerDef = {
+    question: {type: "enum", required: true, options: MEDICAL_HISTORY_QUESTIONS},
+    answer:   {type: "enum", required: true, options: MEDICAL_HISTORY_ANSWERS},
+    detail:   {type: "string", required: false, max: MEDICAL_HISTORY_DETAIL_MAX},
+} as const;
+
+/** The questionnaire for one request, signed with the patient's typed name; every question answered once. */
+export const PatientMedicalHistoryFormDef = {
+    requestGroup: {type: "string", required: true, min: 1, max: REQUEST_GROUP_MAX},
+    answers:      {type: "embeddedArray", required: true, items: MedicalHistoryAnswerDef, minItems: MEDICAL_HISTORY_QUESTIONS.length, maxItems: MEDICAL_HISTORY_QUESTIONS.length},
+    medications:  {type: "string", required: false, max: MEDICAL_HISTORY_MEDICATIONS_MAX},
+    signedName:   {type: "string", required: true, min: 3, max: PATIENT_SIGNED_NAME_MAX},
+} as const;
+export type PatientMedicalHistoryFormType = InferCreateForm<typeof PatientMedicalHistoryFormDef>;
+
+/** What the patient fills in for a trip the clinic planned: their flights and where they stay. */
+export const PatientTripDetailsFormDef = {
+    trip:            {type: "objectId", required: true},
+    arrivalFlight:   {type: "string", required: false, max: PATIENT_TRIP_FLIGHT_MAX},
+    departureFlight: {type: "string", required: false, max: PATIENT_TRIP_FLIGHT_MAX},
+    accommodation:   {type: "string", required: false, max: PATIENT_TRIP_ACCOMMODATION_MAX},
+} as const;
+export type PatientTripDetailsFormType = InferCreateForm<typeof PatientTripDetailsFormDef>;

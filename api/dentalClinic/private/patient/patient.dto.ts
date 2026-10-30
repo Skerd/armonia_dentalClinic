@@ -1,4 +1,5 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {MedicalHistory} from "../../../../dto/medicalHistory.dto";
 import type {CountrySimple} from "../../../../../core/dto/country.dto";
 import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
 import type {PatientLanguage, PatientSource} from "../../../../constants";
@@ -23,4 +24,6 @@ export type Patient = DeletedData & OwnershipData & LifeCycleData & {
     notes?: string;
     /** The patient's own portal account, when they have one. */
     account?: SimpleBlankUser;
+    /** The latest questionnaire the patient signed, kept from their request. */
+    medicalHistory?: MedicalHistory;
 };

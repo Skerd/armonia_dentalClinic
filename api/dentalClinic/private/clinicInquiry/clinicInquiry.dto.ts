@@ -1,4 +1,5 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {MedicalHistory} from "../../../../dto/medicalHistory.dto";
 import type {CountrySimple} from "../../../../../core/dto/country.dto";
 import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
 import type {Media} from "../../../../../core/types";
@@ -13,6 +14,7 @@ export const INQUIRY_TIMELINE_EVENTS = [
     "quoted",
     "files_added",
     "contact_shared",
+    "medical_history",
     "assigned",
     "declined",
     "lost",
@@ -52,6 +54,8 @@ export type ClinicInquiry = DeletedData & OwnershipData & LifeCycleData & {
     budgetCurrency?: CurrencySimple;
     files?: Media[];
     infoRequests: InquiryInfoRequest[];
+    /** The patient's questionnaire, shared with each clinic of the request. */
+    medicalHistory?: MedicalHistory;
     assignedTo?: SimpleBlankUser;
     patient?: PatientSimple;
     firstResponseAt?: string;

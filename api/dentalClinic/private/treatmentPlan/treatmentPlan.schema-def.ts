@@ -65,5 +65,23 @@ export const TreatmentPlanSchemaDef = {
     terms:              {type: "string", required: false, max: TREATMENT_PLAN_TEXT_MAX},
 } as const;
 
+export const TREATMENT_PLAN_PAYMENT_NOTE_MAX = 200;
+
+/** Money the clinic took itself (cash, card terminal, bank transfer) against an accepted plan. */
+export const RecordPlanPaymentFormDef = {
+    _id:    {type: "objectId", required: true},
+    amount: {type: "number", required: true, min: 0.01},
+    note:   {type: "string", required: false, max: TREATMENT_PLAN_PAYMENT_NOTE_MAX},
+} as const;
+export type RecordPlanPaymentFormType = InferCreateForm<typeof RecordPlanPaymentFormDef>;
+
+/** Gives back up to `amount` of what was paid: online charges through the gateway, the rest by hand. */
+export const RefundPlanPaymentFormDef = {
+    _id:    {type: "objectId", required: true},
+    amount: {type: "number", required: true, min: 0.01},
+    reason: {type: "string", required: true, min: 1, max: TREATMENT_PLAN_PAYMENT_NOTE_MAX},
+} as const;
+export type RefundPlanPaymentFormType = InferCreateForm<typeof RefundPlanPaymentFormDef>;
+
 export type CreateTreatmentPlanFormType = InferCreateForm<typeof TreatmentPlanSchemaDef>;
 export type EditTreatmentPlanFormType = InferEditForm<typeof TreatmentPlanSchemaDef>;

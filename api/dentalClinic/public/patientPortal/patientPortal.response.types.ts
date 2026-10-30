@@ -1,8 +1,9 @@
-import type {DepositType, InfoRequestKind, InquiryStatus, TreatmentCategory, TreatmentPlanStatus} from "../../../../constants";
+import type {DepositType, InfoRequestKind, InquiryStatus, PatientTripStatus, TreatmentCategory, TreatmentPlanPaymentStatus, TreatmentPlanStatus} from "../../../../constants";
 import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
 import type {TreatmentPlanLine, TreatmentPlanPhase, TreatmentPlanTotals} from "../../private/treatmentPlan/treatmentPlan.dto";
 import type {InquiryInfoRequest} from "../../private/clinicInquiry/clinicInquiry.dto";
 import type {ClinicMessage} from "../../private/clinicMessage/clinicMessage.dto";
+import type {MedicalHistory} from "../../../../dto/medicalHistory.dto";
 
 /** A file the patient can open through the patient portal's own media route. */
 export type PatientFile = {
@@ -54,6 +55,8 @@ export type PatientCase = {
     travelTo?: string;
     createdAt: string;
     inquiries: PatientInquiry[];
+    /** The questionnaire last sent with this request, if any. */
+    medicalHistory?: MedicalHistory;
 };
 export type PatientCasesResponse = {data: PatientCase[]};
 export type PatientCaseResponse = {data: PatientCase};
@@ -84,6 +87,30 @@ export type PatientPlan = {
     terms?: string;
     sentAt?: string;
     acceptedAt?: string;
+    paymentStatus: TreatmentPlanPaymentStatus;
+    amountPaid: number;
+    /** What the patient can still pay online now: the deposit less what was paid, once accepted. */
+    depositDue: number;
 };
-export type PatientPlansResponse = {data: PatientPlan[]};
+/** `onlinePayment`: the deposit can be paid by card here. */
+export type PatientPlansResponse = {data: PatientPlan[]; onlinePayment: boolean};
+/** The gateway session the portal confirms the card payment with. */
+export type PatientDepositPaymentResponse = {data: {clientSecret: string; publishableKey: string; amount: number}};
 export type PatientPlanAcceptedResponse = {data: {plan: PatientPlan}};
+
+/** A stay the clinic planned for the patient's accepted plan, as the patient sees it. */
+export type PatientTripView = {
+    _id: string;
+    clinic: {_id: string; name: string};
+    phase?: number;
+    phaseTitle?: string;
+    status: PatientTripStatus;
+    arrivalAt: string;
+    departureAt: string;
+    arrivalFlight?: string;
+    departureFlight?: string;
+    accommodation?: string;
+    transfer: boolean;
+};
+export type PatientTripsResponse = {data: PatientTripView[]};
+export type PatientTripResponse = {data: PatientTripView};

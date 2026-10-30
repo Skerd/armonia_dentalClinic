@@ -199,6 +199,11 @@
         "error_code": "inquiry_travel_window_invalid",
         "status": 400
     },
+    "medical_history_incomplete": {
+        "message": "Përgjigjuni të gjitha pyetjeve të historisë mjekësore.",
+        "error_code": "medical_history_incomplete",
+        "status": 400
+    },
     "patient_already_exists": {
         "message": "Ky pacient ka tashmë një kartelë në këtë klinikë.",
         "error_code": "patient_already_exists",
@@ -208,6 +213,36 @@
         "message": "Kjo kartelë pacienti nuk ekziston ose është fshirë.",
         "error_code": "patient_not_found",
         "status": 404
+    },
+    "patient_trip_closed": {
+        "message": "Ky udhëtim ka përfunduar ose është anuluar; nuk mund të ndryshohet më.",
+        "error_code": "patient_trip_closed",
+        "status": 409
+    },
+    "patient_trip_not_found": {
+        "message": "Ky udhëtim nuk ekziston ose është fshirë.",
+        "error_code": "patient_trip_not_found",
+        "status": 404
+    },
+    "patient_trip_phase_invalid": {
+        "message": "Plani ka {} fazë/a.",
+        "error_code": "patient_trip_phase_invalid",
+        "status": 400
+    },
+    "patient_trip_phase_without_plan": {
+        "message": "Zgjidhni planin e trajtimit ku bën pjesë faza.",
+        "error_code": "patient_trip_phase_without_plan",
+        "status": 400
+    },
+    "patient_trip_plan_invalid": {
+        "message": "Plani duhet të jetë plani i pranuar i trajtimit të këtij pacienti.",
+        "error_code": "patient_trip_plan_invalid",
+        "status": 400
+    },
+    "patient_trip_too_early": {
+        "message": "Kjo fazë mund të fillojë më herët më {}: {} ditë shërimi pas udhëtimit të mëparshëm.",
+        "error_code": "patient_trip_too_early",
+        "status": 400
     },
     "practitioner_already_exists": {
         "message": "Ky hyrje është lidhur tashmë me një anëtar tjetër të ekipit.",
@@ -271,6 +306,26 @@
         "message": "Kjo ofertë nuk ekziston ose është fshirë.",
         "error_code": "treatment_plan_not_found",
         "status": 404
+    },
+    "treatment_plan_nothing_to_pay": {
+        "message": "Nuk ka mbetur asgjë për të paguar online për këtë plan.",
+        "error_code": "treatment_plan_nothing_to_pay",
+        "status": 409
+    },
+    "treatment_plan_online_payment_unavailable": {
+        "message": "Pagesa me kartë nuk është e disponueshme tani. Klinika do t'ju tregojë si ta paguani paradhënien.",
+        "error_code": "treatment_plan_online_payment_unavailable",
+        "status": 409
+    },
+    "treatment_plan_payment_exceeds_due": {
+        "message": "Pagesa është më e madhe se {} që mbeten për t'u paguar.",
+        "error_code": "treatment_plan_payment_exceeds_due",
+        "status": 400
+    },
+    "treatment_plan_refund_exceeds_paid": {
+        "message": "Rimbursimi është më i madh se {} e paguar.",
+        "error_code": "treatment_plan_refund_exceeds_paid",
+        "status": 400
     },
     "treatment_plan_target_required": {
         "message": "Një ofertë i përgjigjet një kërkese ose i përket një pacienti: zgjidhni njërën.",
