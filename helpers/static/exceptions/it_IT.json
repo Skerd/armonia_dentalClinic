@@ -341,5 +341,25 @@
         "message": "{} non è un numero di dente FDI.",
         "error_code": "treatment_plan_tooth_invalid",
         "status": 400
+    },
+    "clinicInquiry_not_found": {
+        "message": "Impossibile trovare la richiesta.",
+        "error_code": "clinicInquiry_not_found",
+        "status": 404
+    },
+    "clinicMessage_not_found": {
+        "message": "Impossibile trovare il messaggio.",
+        "error_code": "clinicMessage_not_found",
+        "status": 404
+    },
+    "patientTrip_not_found": {
+        "message": "Impossibile trovare il viaggio del paziente.",
+        "error_code": "patientTrip_not_found",
+        "status": 404
+    },
+    "treatmentPlan_not_found": {
+        "message": "Impossibile trovare il piano di trattamento.",
+        "error_code": "treatmentPlan_not_found",
+        "status": 404
     }
 }

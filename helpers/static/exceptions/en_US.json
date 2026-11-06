@@ -341,5 +341,25 @@
         "message": "{} is not a tooth number in FDI notation.",
         "error_code": "treatment_plan_tooth_invalid",
         "status": 400
+    },
+    "clinicInquiry_not_found": {
+        "message": "The inquiry was not found.",
+        "error_code": "clinicInquiry_not_found",
+        "status": 404
+    },
+    "clinicMessage_not_found": {
+        "message": "The message was not found.",
+        "error_code": "clinicMessage_not_found",
+        "status": 404
+    },
+    "patientTrip_not_found": {
+        "message": "The patient trip was not found.",
+        "error_code": "patientTrip_not_found",
+        "status": 404
+    },
+    "treatmentPlan_not_found": {
+        "message": "The treatment plan was not found.",
+        "error_code": "treatmentPlan_not_found",
+        "status": 404
     }
 }
