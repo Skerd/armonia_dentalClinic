@@ -1,6 +1,8 @@
-/** Locales a patient can be written to in; the same five the platform's emails and UI ship in. */
-export const PATIENT_LANGUAGES = ["it-IT", "en-US", "de-CH", "fr-FR", "sq-AL"] as const;
-export type PatientLanguage = (typeof PATIENT_LANGUAGES)[number];
+import {SUPPORTED_LOCALES, type SupportedLocale} from "../../core/constants";
+
+/** Locales a patient can be written to in: the platform's locales. */
+export const PATIENT_LANGUAGES = SUPPORTED_LOCALES;
+export type PatientLanguage = SupportedLocale;
 
 /**
  * What a treatment is, independent of the clinic's own naming. Lets the portal filter
