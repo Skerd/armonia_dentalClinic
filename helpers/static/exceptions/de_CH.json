@@ -175,7 +175,7 @@
         "status": 404
     },
     "inquiry_assignee_not_member": {
-        "message": "Die Anfrage kann nur einem Mitglied dieser Klinik zugewiesen werden.",
+        "message": "Die Anfrage kann nur einem Mitglied dieser Praxis zugewiesen werden.",
         "error_code": "inquiry_assignee_not_member",
         "status": 400
     },
@@ -293,12 +293,12 @@
         "status": 400
     },
     "treatment_plan_expired": {
-        "message": "Dieser Kostenvoranschlag ist abgelaufen. Bitten Sie die Praxis um einen neuen.",
+        "message": "Dieses Angebot ist abgelaufen. Bitten Sie die Praxis um ein neues.",
         "error_code": "treatment_plan_expired",
         "status": 409
     },
     "treatment_plan_invalid_status": {
-        "message": "Dieser Kostenvoranschlag kann so nicht mehr geändert werden.",
+        "message": "Dieses Angebot kann so nicht mehr geändert werden.",
         "error_code": "treatment_plan_invalid_status",
         "status": 409
     },
@@ -308,7 +308,7 @@
         "status": 400
     },
     "treatment_plan_not_found": {
-        "message": "Dieser Kostenvoranschlag existiert nicht oder wurde gelöscht.",
+        "message": "Dieses Angebot existiert nicht oder wurde gelöscht.",
         "error_code": "treatment_plan_not_found",
         "status": 404
     },
@@ -318,7 +318,7 @@
         "status": 409
     },
     "treatment_plan_online_payment_unavailable": {
-        "message": "Kartenzahlung ist im Moment nicht verfügbar. Die Klinik sagt Ihnen, wie Sie die Anzahlung leisten.",
+        "message": "Kartenzahlung ist im Moment nicht verfügbar. Die Praxis sagt Ihnen, wie Sie die Anzahlung leisten.",
         "error_code": "treatment_plan_online_payment_unavailable",
         "status": 409
     },
@@ -333,12 +333,12 @@
         "status": 400
     },
     "treatment_plan_target_required": {
-        "message": "Ein Kostenvoranschlag gehört zu einer Anfrage oder einem Patienten: wählen Sie eines.",
+        "message": "Ein Angebot gehört zu einer Kostenanfrage oder zu einem Patienten: Wählen Sie eines davon.",
         "error_code": "treatment_plan_target_required",
         "status": 400
     },
     "treatment_plan_terms_required": {
-        "message": "Bitte bestätigen Sie, dass Sie den Kostenvoranschlag und die Bedingungen annehmen.",
+        "message": "Bitte bestätigen Sie, dass Sie das Angebot und seine Bedingungen annehmen.",
         "error_code": "treatment_plan_terms_required",
         "status": 400
     },

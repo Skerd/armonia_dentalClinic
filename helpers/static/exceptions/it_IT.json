@@ -235,12 +235,12 @@
         "status": 400
     },
     "patient_trip_phase_without_plan": {
-        "message": "Scegli il piano di trattamento a cui appartiene la fase.",
+        "message": "Scegli il piano di cura a cui appartiene la fase.",
         "error_code": "patient_trip_phase_without_plan",
         "status": 400
     },
     "patient_trip_plan_invalid": {
-        "message": "Il piano deve essere il piano di trattamento accettato da questo paziente.",
+        "message": "Il piano deve essere il piano di cura accettato da questo paziente.",
         "error_code": "patient_trip_plan_invalid",
         "status": 400
     },
@@ -363,7 +363,7 @@
         "status": 404
     },
     "treatmentPlan_not_found": {
-        "message": "Impossibile trovare il piano di trattamento.",
+        "message": "Impossibile trovare il piano di cura.",
         "error_code": "treatmentPlan_not_found",
         "status": 404
     }

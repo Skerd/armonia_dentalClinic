@@ -128,7 +128,7 @@
         "error_code": "clinic_service_price_required"
     },
     "clinic_service_slug_taken": {
-        "message": "Një trajtim tjetër e përdor tashmë këtë slug.",
+        "message": "Një trajtim tjetër e përdor tashmë këtë emër adrese web.",
         "error_code": "clinic_service_slug_taken",
         "status": 409
     },
@@ -245,12 +245,12 @@
         "status": 400
     },
     "patient_trip_too_early": {
-        "message": "Kjo fazë mund të fillojë më herët më {}: {} ditë shërimi pas udhëtimit të mëparshëm.",
+        "message": "Kjo fazë mund të fillojë më së hershmi më {}: {} ditë shërimi pas udhëtimit të mëparshëm.",
         "error_code": "patient_trip_too_early",
         "status": 400
     },
     "practitioner_already_exists": {
-        "message": "Ky hyrje është lidhur tashmë me një anëtar tjetër të ekipit.",
+        "message": "Kjo llogari punonjësi është lidhur tashmë me një anëtar tjetër të ekipit.",
         "error_code": "practitioner_already_exists",
         "status": 409
     },
@@ -323,12 +323,12 @@
         "status": 409
     },
     "treatment_plan_payment_exceeds_due": {
-        "message": "Pagesa është më e madhe se {} që mbeten për t'u paguar.",
+        "message": "Pagesa është më e madhe se shuma prej {} që mbetet për t'u paguar.",
         "error_code": "treatment_plan_payment_exceeds_due",
         "status": 400
     },
     "treatment_plan_refund_exceeds_paid": {
-        "message": "Rimbursimi është më i madh se {} e paguar.",
+        "message": "Rimbursimi është më i madh se shuma e paguar prej {}.",
         "error_code": "treatment_plan_refund_exceeds_paid",
         "status": 400
     },

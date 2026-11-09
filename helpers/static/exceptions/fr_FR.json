@@ -5,7 +5,7 @@
         "status": 409
     },
     "appointment_cancel_deadline_passed": {
-        "message": "L'annulation en ligne se ferme {} heures avant le rendez-vous. Veuillez appeler le cabinet.",
+        "message": "L'annulation en ligne n'est plus possible {} heures avant le rendez-vous. Veuillez appeler le cabinet.",
         "error_code": "appointment_cancel_deadline_passed",
         "status": 409
     },
@@ -45,7 +45,7 @@
         "error_code": "appointment_privacy_not_accepted"
     },
     "appointment_reschedule_deadline_passed": {
-        "message": "Les modifications en ligne se ferment {} heures avant le rendez-vous. Veuillez appeler le cabinet.",
+        "message": "Les modifications en ligne ne sont plus possibles {} heures avant le rendez-vous. Veuillez appeler le cabinet.",
         "error_code": "appointment_reschedule_deadline_passed",
         "status": 409
     },
@@ -155,7 +155,7 @@
         "status": 400
     },
     "inquiry_clinic_not_available": {
-        "message": "L'un des cabinets n'accepte plus de demandes ici. Actualisez la liste.",
+        "message": "L'un des cabinets n'accepte plus de demandes ici. Actualisez la liste et réessayez.",
         "error_code": "inquiry_clinic_not_available",
         "status": 409
     },
@@ -175,7 +175,7 @@
         "status": 404
     },
     "inquiry_assignee_not_member": {
-        "message": "La demande ne peut être attribuée qu'à un membre de cette clinique.",
+        "message": "La demande ne peut être attribuée qu'à un membre de ce cabinet.",
         "error_code": "inquiry_assignee_not_member",
         "status": 400
     },
@@ -200,7 +200,7 @@
         "status": 404
     },
     "inquiry_travel_window_invalid": {
-        "message": "La fin de votre période de voyage doit suivre son début.",
+        "message": "La fin de votre période de voyage doit être postérieure à son début.",
         "error_code": "inquiry_travel_window_invalid",
         "status": 400
     },
