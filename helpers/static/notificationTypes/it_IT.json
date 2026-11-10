@@ -1,0 +1,55 @@
+{
+  "dentalClinic": {
+    "title": "Clinica dentale",
+    "codes": {
+      "APPOINTMENT_NEW": {
+        "title": "Nuovo appuntamento",
+        "message": "Nuovo appuntamento {number} il {when}"
+      },
+      "APPOINTMENT_CANCELLED": {
+        "title": "Appuntamento annullato dal paziente",
+        "message": "L'appuntamento {number} del {when} è stato annullato dal paziente"
+      },
+      "INQUIRY_NEW": {
+        "title": "Nuova richiesta di preventivo",
+        "message": "Nuova richiesta di preventivo {number}"
+      },
+      "INQUIRY_MESSAGE": {
+        "title": "Nuovo messaggio del paziente",
+        "message": "Nuovo messaggio del paziente sulla richiesta {number}"
+      },
+      "INQUIRY_FILES_ADDED": {
+        "title": "File aggiunti dal paziente",
+        "message": "Il paziente ha aggiunto file alla richiesta {number}"
+      },
+      "INQUIRY_MEDICAL_HISTORY": {
+        "title": "Anamnesi compilata",
+        "message": "Il paziente ha compilato l'anamnesi per la richiesta {number}"
+      },
+      "INQUIRY_WITHDRAWN": {
+        "title": "Richiesta ritirata",
+        "message": "La richiesta {number} è stata ritirata dal paziente"
+      },
+      "INQUIRY_UNANSWERED": {
+        "title": "Richiesta ancora senza risposta",
+        "message": "La richiesta {number} è ancora senza risposta"
+      },
+      "INQUIRY_CHOSE_ANOTHER_CLINIC": {
+        "title": "Il paziente ha scelto un'altra clinica",
+        "message": "Il paziente della richiesta {number} ha scelto un'altra clinica"
+      },
+      "PLAN_ACCEPTED": {
+        "title": "Preventivo accettato",
+        "message": "Il paziente ha accettato il tuo preventivo sulla richiesta {number}"
+      },
+      "DEPOSIT_PAID": {
+        "title": "Acconto pagato",
+        "message": "Il paziente ha pagato l'acconto sulla richiesta {number}"
+      },
+      "TRIP_DETAILS_ADDED": {
+        "title": "Dettagli del viaggio aggiunti",
+        "message": "Il paziente ha aggiunto i dettagli del volo o dell'hotel sulla richiesta {number}"
+      }
+    }
+  }
+}

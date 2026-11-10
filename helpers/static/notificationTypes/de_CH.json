@@ -1,0 +1,55 @@
+{
+  "dentalClinic": {
+    "title": "Zahnklinik",
+    "codes": {
+      "APPOINTMENT_NEW": {
+        "title": "Neuer Termin",
+        "message": "Neuer Termin {number} am {when}"
+      },
+      "APPOINTMENT_CANCELLED": {
+        "title": "Termin vom Patienten abgesagt",
+        "message": "Termin {number} am {when} wurde vom Patienten abgesagt"
+      },
+      "INQUIRY_NEW": {
+        "title": "Neue Kostenvoranschlagsanfrage",
+        "message": "Neue Kostenvoranschlagsanfrage {number}"
+      },
+      "INQUIRY_MESSAGE": {
+        "title": "Neue Patientennachricht",
+        "message": "Neue Patientennachricht zur Anfrage {number}"
+      },
+      "INQUIRY_FILES_ADDED": {
+        "title": "Patient hat Dateien hinzugefügt",
+        "message": "Der Patient hat der Anfrage {number} Dateien hinzugefügt"
+      },
+      "INQUIRY_MEDICAL_HISTORY": {
+        "title": "Anamnese ausgefüllt",
+        "message": "Der Patient hat die Anamnese für die Anfrage {number} ausgefüllt"
+      },
+      "INQUIRY_WITHDRAWN": {
+        "title": "Anfrage zurückgezogen",
+        "message": "Anfrage {number} wurde vom Patienten zurückgezogen"
+      },
+      "INQUIRY_UNANSWERED": {
+        "title": "Anfrage noch unbeantwortet",
+        "message": "Anfrage {number} ist noch unbeantwortet"
+      },
+      "INQUIRY_CHOSE_ANOTHER_CLINIC": {
+        "title": "Patient hat eine andere Klinik gewählt",
+        "message": "Der Patient der Anfrage {number} hat eine andere Klinik gewählt"
+      },
+      "PLAN_ACCEPTED": {
+        "title": "Kostenvoranschlag angenommen",
+        "message": "Der Patient hat Ihren Kostenvoranschlag zur Anfrage {number} angenommen"
+      },
+      "DEPOSIT_PAID": {
+        "title": "Anzahlung bezahlt",
+        "message": "Der Patient hat die Anzahlung zur Anfrage {number} bezahlt"
+      },
+      "TRIP_DETAILS_ADDED": {
+        "title": "Reisedetails hinzugefügt",
+        "message": "Der Patient hat Flug- oder Hoteldetails zur Anfrage {number} hinzugefügt"
+      }
+    }
+  }
+}

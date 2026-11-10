@@ -1,0 +1,55 @@
+{
+  "dentalClinic": {
+    "title": "Klinika dentare",
+    "codes": {
+      "APPOINTMENT_NEW": {
+        "title": "Takim i ri",
+        "message": "Takim i ri {number} më {when}"
+      },
+      "APPOINTMENT_CANCELLED": {
+        "title": "Takimi u anulua nga pacienti",
+        "message": "Takimi {number} më {when} u anulua nga pacienti"
+      },
+      "INQUIRY_NEW": {
+        "title": "Kërkesë e re për ofertë",
+        "message": "Kërkesë e re për ofertë {number}"
+      },
+      "INQUIRY_MESSAGE": {
+        "title": "Mesazh i ri nga pacienti",
+        "message": "Mesazh i ri nga pacienti për kërkesën {number}"
+      },
+      "INQUIRY_FILES_ADDED": {
+        "title": "Pacienti shtoi skedarë",
+        "message": "Pacienti shtoi skedarë në kërkesën {number}"
+      },
+      "INQUIRY_MEDICAL_HISTORY": {
+        "title": "Historia mjekësore u plotësua",
+        "message": "Pacienti plotësoi historinë mjekësore për kërkesën {number}"
+      },
+      "INQUIRY_WITHDRAWN": {
+        "title": "Kërkesa u tërhoq",
+        "message": "Kërkesa {number} u tërhoq nga pacienti"
+      },
+      "INQUIRY_UNANSWERED": {
+        "title": "Kërkesa ende pa përgjigje",
+        "message": "Kërkesa {number} është ende pa përgjigje"
+      },
+      "INQUIRY_CHOSE_ANOTHER_CLINIC": {
+        "title": "Pacienti zgjodhi një klinikë tjetër",
+        "message": "Pacienti i kërkesës {number} zgjodhi një klinikë tjetër"
+      },
+      "PLAN_ACCEPTED": {
+        "title": "Oferta u pranua",
+        "message": "Pacienti pranoi ofertën tuaj për kërkesën {number}"
+      },
+      "DEPOSIT_PAID": {
+        "title": "Depozita u pagua",
+        "message": "Pacienti pagoi depozitën për kërkesën {number}"
+      },
+      "TRIP_DETAILS_ADDED": {
+        "title": "U shtuan detajet e udhëtimit",
+        "message": "Pacienti shtoi detajet e fluturimit ose të hotelit për kërkesën {number}"
+      }
+    }
+  }
+}
