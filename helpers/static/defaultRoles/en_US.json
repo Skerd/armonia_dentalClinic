@@ -1,0 +1,18 @@
+{
+  "clinic_admin": {
+    "name": "Clinic Admin",
+    "description": "Runs the clinic: settings, locations, treatments, the team and their schedules, time off, every appointment, patient folder, estimate request and patient trip."
+  },
+  "clinic_receptionist": {
+    "name": "Receptionist",
+    "description": "Works the front desk: books, moves, confirms and cancels appointments, keeps patient folders and trips (arrivals, airport pickups) up to date and enters time off. Cannot change treatments, the team or settings, and does not see medical histories, X-rays or photos."
+  },
+  "clinic_dentist": {
+    "name": "Dentist",
+    "description": "Sees their own appointments and day, marks visits completed or missed, writes treatment plans and quotes, sees their own time off and reads patient folders."
+  },
+  "clinic_coordinator": {
+    "name": "Patient Coordinator",
+    "description": "Works the estimate requests from the portal and the clinic's site: answers patients, asks for X-rays and photos, prepares and sends quotes, opens their patient folder and plans their trips. Reads the treatments, team and appointments."
+  }
+}

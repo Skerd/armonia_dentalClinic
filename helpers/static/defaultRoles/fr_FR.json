@@ -1,0 +1,18 @@
+{
+  "clinic_admin": {
+    "name": "Administrateur de la clinique",
+    "description": "Dirige la clinique : paramètres, sites, traitements, l'équipe et ses plannings, les absences, chaque rendez-vous, dossier patient, demande de devis et voyage patient."
+  },
+  "clinic_receptionist": {
+    "name": "Réceptionniste",
+    "description": "Travaille à l'accueil : réserve, déplace, confirme et annule les rendez-vous, tient à jour les dossiers patients et les voyages (arrivées, transferts aéroport) et saisit les absences. Ne peut pas modifier les traitements, l'équipe ni les paramètres, et ne voit pas les antécédents médicaux, radiographies ni photos."
+  },
+  "clinic_dentist": {
+    "name": "Dentiste",
+    "description": "Voit ses propres rendez-vous et sa journée, marque les visites comme terminées ou manquées, rédige les plans de traitement et les devis, voit ses propres absences et consulte les dossiers patients."
+  },
+  "clinic_coordinator": {
+    "name": "Coordinateur patients",
+    "description": "Traite les demandes de devis venant du portail et du site de la clinique : répond aux patients, demande radiographies et photos, prépare et envoie les devis, ouvre leur dossier patient et planifie leurs voyages. Consulte les traitements, l'équipe et les rendez-vous."
+  }
+}

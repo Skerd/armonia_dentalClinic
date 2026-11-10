@@ -1,0 +1,18 @@
+{
+  "clinic_admin": {
+    "name": "Klinikadministrator",
+    "description": "Führt die Klinik: Einstellungen, Standorte, Behandlungen, das Team und seine Dienstpläne, Abwesenheiten, jeden Termin, jede Patientenakte, jede Kostenvoranschlagsanfrage und jede Patientenreise."
+  },
+  "clinic_receptionist": {
+    "name": "Empfang",
+    "description": "Arbeitet am Empfang: bucht, verschiebt, bestätigt und storniert Termine, hält Patientenakten und Reisen (Ankünfte, Flughafentransfers) aktuell und erfasst Abwesenheiten. Kann Behandlungen, das Team oder Einstellungen nicht ändern und sieht keine Krankengeschichten, Röntgenbilder oder Fotos."
+  },
+  "clinic_dentist": {
+    "name": "Zahnarzt",
+    "description": "Sieht die eigenen Termine und den eigenen Tag, markiert Besuche als abgeschlossen oder verpasst, erstellt Behandlungspläne und Offerten, sieht die eigenen Abwesenheiten und liest Patientenakten."
+  },
+  "clinic_coordinator": {
+    "name": "Patientenkoordinator",
+    "description": "Bearbeitet die Kostenvoranschlagsanfragen aus dem Portal und von der Website der Klinik: antwortet Patienten, fordert Röntgenbilder und Fotos an, erstellt und versendet Offerten, eröffnet die Patientenakte und plant die Reisen. Liest Behandlungen, Team und Termine."
+  }
+}
