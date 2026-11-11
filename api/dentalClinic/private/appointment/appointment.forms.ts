@@ -19,6 +19,17 @@ export const AppointmentPatientDef = {
     phone:     {type: "string", required: true, min: 1, max: APPOINTMENT_PATIENT_PHONE_MAX},
 } as const;
 
+/**
+ * The contact on a staff booking. All optional here because a picked folder supplies it; the server requires
+ * all four when no folder is picked (`appointment_patient_contact_required`). Online booking keeps the strict def.
+ */
+export const StaffAppointmentPatientDef = {
+    firstName: {type: "string", required: false, min: 1, max: APPOINTMENT_PATIENT_NAME_MAX},
+    lastName:  {type: "string", required: false, min: 1, max: APPOINTMENT_PATIENT_NAME_MAX},
+    email:     {type: "string", required: false, format: "email"},
+    phone:     {type: "string", required: false, min: 1, max: APPOINTMENT_PATIENT_PHONE_MAX},
+} as const;
+
 /** A start as local wall-clock date and time at the appointment's location. */
 export const AppointmentStartDef = {
     date: {type: "string", required: true, format: "localDate"},
@@ -31,9 +42,9 @@ export const CreateAppointmentFormDef = {
     location:       {type: "objectId", required: true},
     practitioner:   {type: "objectId", required: true},
     ...AppointmentStartDef,
-    patient:        {type: "embedded", required: true, items: AppointmentPatientDef},
-    /** The patient's existing folder; left empty, one is found or opened from the contact above. */
+    /** The patient's existing folder; picked, its contact is used and the fields below may stay empty. */
     patientRecord:  {type: "objectId", required: false},
+    patient:        {type: "embedded", required: false, items: StaffAppointmentPatientDef},
     customer:       {type: "objectId", required: false},
     note:           {type: "string", required: false, max: APPOINTMENT_NOTE_MAX},
     idempotencyKey: {type: "string", required: true, ...APPOINTMENT_IDEMPOTENCY_KEY},

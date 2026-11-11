@@ -34,13 +34,15 @@ export const TreatmentPlanLineDef = {
     phase:         {type: "number", required: true, min: 1, max: TREATMENT_PLAN_PHASES_MAX},
     kind:          {type: "enum", required: true, options: TREATMENT_PLAN_LINE_KINDS},
     service:       {type: "objectId", required: false},
-    name:          {type: "string", required: true, min: 1, max: TREATMENT_PLAN_LINE_NAME_MAX},
+    /** Left empty on a line picked from the price list, the server uses the treatment's name (UX-05). */
+    name:          {type: "string", required: false, min: 1, max: TREATMENT_PLAN_LINE_NAME_MAX},
     /** FDI tooth numbers; empty for whole-mouth work and package lines. */
     teeth:         {type: "stringArray", required: false, maxItems: FDI_TEETH.length, itemMin: 2, itemMax: 2},
     material:      {type: "string", required: false, max: TREATMENT_PLAN_LINE_DETAIL_MAX},
     brand:         {type: "string", required: false, max: TREATMENT_PLAN_LINE_DETAIL_MAX},
     quantity:      {type: "number", required: true, ...TREATMENT_PLAN_QUANTITY},
-    unitPrice:     {type: "number", required: true, min: 0},
+    /** Left empty on a line picked from the price list, the server uses the treatment's price. */
+    unitPrice:     {type: "number", required: false, min: 0},
     /** An amount off this line, in the plan's currency. */
     discount:      {type: "number", required: false, min: 0},
     warrantyYears: {type: "number", required: false, ...TREATMENT_PLAN_WARRANTY_YEARS},

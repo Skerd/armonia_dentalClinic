@@ -13,7 +13,8 @@ export const CLINIC_SERVICE_BUFFER_MINUTES = {min: 0, max: 120} as const;
 
 export const ClinicServiceSchemaDef = {
     name:                {type: "string", required: true, min: 1, max: CLINIC_SERVICE_NAME_MAX},
-    slug:                {type: "string", required: true, min: 1, max: CLINIC_SERVICE_SLUG_MAX, format: "slug"},
+    // Optional: left empty, the server makes it from the name (UX-05).
+    slug:                {type: "string", required: false, min: 1, max: CLINIC_SERVICE_SLUG_MAX, format: "slug"},
     description:         {type: "string", required: false, max: CLINIC_SERVICE_DESCRIPTION_MAX},
     /** What kind of treatment this is; the portal filters clinics by it. */
     category:            {type: "enum", required: true, options: TREATMENT_CATEGORIES},

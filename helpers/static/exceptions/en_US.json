@@ -66,6 +66,16 @@
         "message": "Appointments must be booked at least {} hours ahead.",
         "error_code": "appointment_too_soon"
     },
+    "appointment_patient_contact_required": {
+        "message": "Pick the patient's folder, or enter their first name, last name, email and phone.",
+        "error_code": "appointment_patient_contact_required",
+        "status": 400
+    },
+    "appointment_patient_folder_incomplete": {
+        "message": "This patient's folder has no email or phone. Add them to the folder, then book again.",
+        "error_code": "appointment_patient_folder_incomplete",
+        "status": 400
+    },
     "clinicConfig_already_exists": {
         "message": "Clinic settings already exist for this business.",
         "error_code": "clinicConfig_already_exists",
@@ -97,7 +107,7 @@
         "status": 404
     },
     "clinic_currency_not_configured": {
-        "message": "Add a currency before setting up online booking.",
+        "message": "Choose the clinic currency first (Configurations › Dental clinic › Prices and payments).",
         "error_code": "clinic_currency_not_configured"
     },
     "clinic_hours_end_before_start": {
@@ -345,6 +355,16 @@
     "treatment_plan_tooth_invalid": {
         "message": "{} is not a tooth number in FDI notation.",
         "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
+    },
+    "treatment_plan_line_name_required": {
+        "message": "Each line needs a description, or a treatment from the price list.",
+        "error_code": "treatment_plan_line_name_required",
+        "status": 400
+    },
+    "treatment_plan_line_price_required": {
+        "message": "\"{}\" needs a unit price: its treatment has no price in the price list.",
+        "error_code": "treatment_plan_line_price_required",
         "status": 400
     },
     "clinicInquiry_not_found": {

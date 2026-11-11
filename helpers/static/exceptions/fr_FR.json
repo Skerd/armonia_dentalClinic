@@ -66,6 +66,16 @@
         "message": "Les rendez-vous doivent être pris au moins {} heures à l'avance.",
         "error_code": "appointment_too_soon"
     },
+    "appointment_patient_contact_required": {
+        "message": "Choisissez le dossier du patient, ou saisissez son prénom, son nom, son e-mail et son téléphone.",
+        "error_code": "appointment_patient_contact_required",
+        "status": 400
+    },
+    "appointment_patient_folder_incomplete": {
+        "message": "Le dossier de ce patient n'a pas d'e-mail ou de téléphone. Ajoutez-les au dossier, puis réservez à nouveau.",
+        "error_code": "appointment_patient_folder_incomplete",
+        "status": 400
+    },
     "clinicConfig_already_exists": {
         "message": "Des paramètres de cabinet existent déjà pour cette entreprise.",
         "error_code": "clinicConfig_already_exists",
@@ -97,7 +107,7 @@
         "status": 404
     },
     "clinic_currency_not_configured": {
-        "message": "Ajoutez une devise avant de configurer la réservation en ligne.",
+        "message": "Choisissez d'abord la devise du cabinet (Configurations › Cabinet dentaire › Prix et paiements).",
         "error_code": "clinic_currency_not_configured"
     },
     "clinic_hours_end_before_start": {
@@ -345,6 +355,16 @@
     "treatment_plan_tooth_invalid": {
         "message": "{} n'est pas un numéro de dent FDI.",
         "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
+    },
+    "treatment_plan_line_name_required": {
+        "message": "Chaque ligne a besoin d'une description ou d'un soin de la liste de prix.",
+        "error_code": "treatment_plan_line_name_required",
+        "status": 400
+    },
+    "treatment_plan_line_price_required": {
+        "message": "« {} » a besoin d'un prix unitaire : ce soin n'a pas de prix dans la liste de prix.",
+        "error_code": "treatment_plan_line_price_required",
         "status": 400
     },
     "clinicInquiry_not_found": {

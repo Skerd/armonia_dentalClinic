@@ -66,6 +66,16 @@
         "message": "Termine müssen mindestens {} Stunden im Voraus gebucht werden.",
         "error_code": "appointment_too_soon"
     },
+    "appointment_patient_contact_required": {
+        "message": "Wählen Sie das Patientendossier oder geben Sie Vorname, Nachname, E-Mail und Telefon ein.",
+        "error_code": "appointment_patient_contact_required",
+        "status": 400
+    },
+    "appointment_patient_folder_incomplete": {
+        "message": "Im Dossier dieses Patienten fehlt die E-Mail oder die Telefonnummer. Ergänzen Sie sie im Dossier und buchen Sie erneut.",
+        "error_code": "appointment_patient_folder_incomplete",
+        "status": 400
+    },
     "clinicConfig_already_exists": {
         "message": "Für dieses Unternehmen gibt es bereits Praxiseinstellungen.",
         "error_code": "clinicConfig_already_exists",
@@ -97,7 +107,7 @@
         "status": 404
     },
     "clinic_currency_not_configured": {
-        "message": "Legen Sie zuerst eine Währung an, bevor Sie Online-Buchungen einrichten.",
+        "message": "Wählen Sie zuerst die Währung der Praxis (Konfigurationen › Zahnarztpraxis › Preise und Zahlungen).",
         "error_code": "clinic_currency_not_configured"
     },
     "clinic_hours_end_before_start": {
@@ -345,6 +355,16 @@
     "treatment_plan_tooth_invalid": {
         "message": "{} ist keine Zahnnummer nach FDI.",
         "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
+    },
+    "treatment_plan_line_name_required": {
+        "message": "Jede Zeile braucht eine Beschreibung oder eine Behandlung aus der Preisliste.",
+        "error_code": "treatment_plan_line_name_required",
+        "status": 400
+    },
+    "treatment_plan_line_price_required": {
+        "message": "«{}» braucht einen Stückpreis: Die Behandlung hat keinen Preis in der Preisliste.",
+        "error_code": "treatment_plan_line_price_required",
         "status": 400
     },
     "clinicInquiry_not_found": {

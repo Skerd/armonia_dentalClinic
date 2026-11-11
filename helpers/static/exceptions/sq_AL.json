@@ -66,6 +66,16 @@
         "message": "Takimet duhet të rezervohen të paktën {} orë përpara.",
         "error_code": "appointment_too_soon"
     },
+    "appointment_patient_contact_required": {
+        "message": "Zgjidhni dosjen e pacientit, ose shkruani emrin, mbiemrin, emailin dhe telefonin.",
+        "error_code": "appointment_patient_contact_required",
+        "status": 400
+    },
+    "appointment_patient_folder_incomplete": {
+        "message": "Dosja e këtij pacienti nuk ka email ose telefon. Shtojini në dosje dhe rezervoni përsëri.",
+        "error_code": "appointment_patient_folder_incomplete",
+        "status": 400
+    },
     "clinicConfig_already_exists": {
         "message": "Cilësimet e klinikës ekzistojnë tashmë për këtë biznes.",
         "error_code": "clinicConfig_already_exists",
@@ -97,7 +107,7 @@
         "status": 404
     },
     "clinic_currency_not_configured": {
-        "message": "Shtoni një monedhë para se të konfiguroni rezervimin online.",
+        "message": "Zgjidhni fillimisht monedhën e klinikës (Konfigurimet › Klinikë dentare › Çmimet dhe pagesat).",
         "error_code": "clinic_currency_not_configured"
     },
     "clinic_hours_end_before_start": {
@@ -345,6 +355,16 @@
     "treatment_plan_tooth_invalid": {
         "message": "{} nuk është numër dhëmbi sipas FDI.",
         "error_code": "treatment_plan_tooth_invalid",
+        "status": 400
+    },
+    "treatment_plan_line_name_required": {
+        "message": "Çdo rresht ka nevojë për një përshkrim ose një trajtim nga lista e çmimeve.",
+        "error_code": "treatment_plan_line_name_required",
+        "status": 400
+    },
+    "treatment_plan_line_price_required": {
+        "message": "\"{}\" ka nevojë për një çmim njësie: trajtimi nuk ka çmim në listën e çmimeve.",
+        "error_code": "treatment_plan_line_price_required",
         "status": 400
     },
     "clinicInquiry_not_found": {
