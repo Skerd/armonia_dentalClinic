@@ -4,7 +4,7 @@ import type {PatientSimple} from "../../../../dto/patient.dto";
 import type {ClinicInquirySimple} from "../../../../dto/clinicInquiry.dto";
 import type {TreatmentPlanSimple} from "../../../../dto/treatmentPlan.dto";
 import type {ClinicServiceSimple} from "../../../../dto/clinicService.dto";
-import type {DepositType, TreatmentPlanLineKind, TreatmentPlanPaymentStatus, TreatmentPlanStatus} from "../../../../constants";
+import type {DepositType, TreatmentPlanAcceptanceChannel, TreatmentPlanLineKind, TreatmentPlanPaymentStatus, TreatmentPlanStatus} from "../../../../constants";
 
 export const TREATMENT_PLAN_TIMELINE_EVENTS = [
     "created", "sent", "revised", "accepted", "rejected", "expired", "superseded", "payment_received", "payment_failed", "refunded",
@@ -51,7 +51,8 @@ export type TreatmentPlan = DeletedData & OwnershipData & LifeCycleData & {
     notes?: string;
     terms?: string;
     sentAt?: string;
-    acceptance?: {name: string; at: string};
+    /** `channel` is set when staff recorded the yes (in person, by phone); a portal acceptance has none. */
+    acceptance?: {name: string; at: string; channel?: TreatmentPlanAcceptanceChannel};
     paymentStatus: TreatmentPlanPaymentStatus;
     amountPaid: number;
     /** The total less what was paid. */

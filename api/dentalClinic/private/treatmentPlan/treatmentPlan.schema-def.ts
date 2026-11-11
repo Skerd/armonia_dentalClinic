@@ -2,6 +2,7 @@ import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/s
 import {
     DEPOSIT_TYPES,
     FDI_TEETH,
+    TREATMENT_PLAN_ACCEPTANCE_CHANNELS,
     TREATMENT_PLAN_LINE_KINDS,
     TREATMENT_PLAN_LINES_MAX,
     TREATMENT_PLAN_PHASES_MAX,
@@ -84,6 +85,13 @@ export const RefundPlanPaymentFormDef = {
     reason: {type: "string", required: true, min: 1, max: TREATMENT_PLAN_PAYMENT_NOTE_MAX},
 } as const;
 export type RefundPlanPaymentFormType = InferCreateForm<typeof RefundPlanPaymentFormDef>;
+
+/** Staff record that the patient accepted a sent quote in person or by phone (not for multi-clinic portal requests). */
+export const AcceptPlanAtClinicFormDef = {
+    _id:     {type: "objectId", required: true},
+    channel: {type: "enum", required: true, options: TREATMENT_PLAN_ACCEPTANCE_CHANNELS},
+} as const;
+export type AcceptPlanAtClinicFormType = InferCreateForm<typeof AcceptPlanAtClinicFormDef>;
 
 export type CreateTreatmentPlanFormType = InferCreateForm<typeof TreatmentPlanSchemaDef>;
 export type EditTreatmentPlanFormType = InferEditForm<typeof TreatmentPlanSchemaDef>;

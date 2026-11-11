@@ -297,6 +297,11 @@
         "message": "Zgjidhni ose një mjek (mungesë) ose një vendndodhje (mbyllje), jo të dyja.",
         "error_code": "schedule_exception_target_required"
     },
+    "schedule_exception_end_before_start": {
+        "message": "Mungesa duhet të mbarojë pasi fillon.",
+        "error_code": "schedule_exception_end_before_start",
+        "status": 400
+    },
     "treatment_plan_deposit_invalid": {
         "message": "Vendosni shumën e paradhënies ose një përqindje deri në 100.",
         "error_code": "treatment_plan_deposit_invalid",
@@ -365,6 +370,11 @@
     "treatment_plan_line_price_required": {
         "message": "\"{}\" ka nevojë për një çmim njësie: trajtimi nuk ka çmim në listën e çmimeve.",
         "error_code": "treatment_plan_line_price_required",
+        "status": 400
+    },
+    "treatment_plan_patient_accepts_online": {
+        "message": "Pacienti ka pyetur disa klinika përmes portalit, prandaj e pranon ofertën nga llogaria e tij.",
+        "error_code": "treatment_plan_patient_accepts_online",
         "status": 400
     },
     "clinicInquiry_not_found": {

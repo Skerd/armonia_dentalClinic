@@ -297,6 +297,11 @@
         "message": "Choisissez soit un praticien (absence), soit un site (fermeture), pas les deux.",
         "error_code": "schedule_exception_target_required"
     },
+    "schedule_exception_end_before_start": {
+        "message": "Une absence doit se terminer après son début.",
+        "error_code": "schedule_exception_end_before_start",
+        "status": 400
+    },
     "treatment_plan_deposit_invalid": {
         "message": "Indiquez un montant d'acompte, ou un pourcentage d'au plus 100.",
         "error_code": "treatment_plan_deposit_invalid",
@@ -365,6 +370,11 @@
     "treatment_plan_line_price_required": {
         "message": "« {} » a besoin d'un prix unitaire : ce soin n'a pas de prix dans la liste de prix.",
         "error_code": "treatment_plan_line_price_required",
+        "status": 400
+    },
+    "treatment_plan_patient_accepts_online": {
+        "message": "Le patient a contacté plusieurs cabinets via le portail : il accepte donc un devis depuis son propre compte.",
+        "error_code": "treatment_plan_patient_accepts_online",
         "status": 400
     },
     "clinicInquiry_not_found": {

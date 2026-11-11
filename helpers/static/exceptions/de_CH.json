@@ -297,6 +297,11 @@
         "message": "Wählen Sie entweder eine Fachperson (Abwesenheit) oder einen Standort (Schliessung), nicht beides.",
         "error_code": "schedule_exception_target_required"
     },
+    "schedule_exception_end_before_start": {
+        "message": "Eine Abwesenheit muss nach ihrem Beginn enden.",
+        "error_code": "schedule_exception_end_before_start",
+        "status": 400
+    },
     "treatment_plan_deposit_invalid": {
         "message": "Geben Sie einen Anzahlungsbetrag oder einen Prozentsatz bis 100 an.",
         "error_code": "treatment_plan_deposit_invalid",
@@ -365,6 +370,11 @@
     "treatment_plan_line_price_required": {
         "message": "«{}» braucht einen Stückpreis: Die Behandlung hat keinen Preis in der Preisliste.",
         "error_code": "treatment_plan_line_price_required",
+        "status": 400
+    },
+    "treatment_plan_patient_accepts_online": {
+        "message": "Der Patient hat über das Portal mehrere Praxen angefragt und nimmt ein Angebot daher in seinem eigenen Konto an.",
+        "error_code": "treatment_plan_patient_accepts_online",
         "status": 400
     },
     "clinicInquiry_not_found": {

@@ -297,6 +297,11 @@
         "message": "Scegli un professionista (assenza) oppure una sede (chiusura), non entrambi.",
         "error_code": "schedule_exception_target_required"
     },
+    "schedule_exception_end_before_start": {
+        "message": "Un'assenza deve finire dopo il suo inizio.",
+        "error_code": "schedule_exception_end_before_start",
+        "status": 400
+    },
     "treatment_plan_deposit_invalid": {
         "message": "Indica un importo di acconto o una percentuale fino a 100.",
         "error_code": "treatment_plan_deposit_invalid",
@@ -365,6 +370,11 @@
     "treatment_plan_line_price_required": {
         "message": "«{}» ha bisogno di un prezzo unitario: il trattamento non ha un prezzo nel listino.",
         "error_code": "treatment_plan_line_price_required",
+        "status": 400
+    },
+    "treatment_plan_patient_accepts_online": {
+        "message": "Il paziente ha contattato più studi tramite il portale, quindi accetta un preventivo dal proprio account.",
+        "error_code": "treatment_plan_patient_accepts_online",
         "status": 400
     },
     "clinicInquiry_not_found": {

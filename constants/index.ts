@@ -109,6 +109,10 @@ export const PATIENT_FILE_MAX_BYTES = 200 * 1024 * 1024;
 export const TREATMENT_PLAN_STATUSES = ["draft", "sent", "accepted", "rejected", "expired", "superseded"] as const;
 export type TreatmentPlanStatus = (typeof TREATMENT_PLAN_STATUSES)[number];
 
+/** How a patient's yes reached the clinic when staff record the acceptance (the portal records its own signature). */
+export const TREATMENT_PLAN_ACCEPTANCE_CHANNELS = ["in_person", "phone"] as const;
+export type TreatmentPlanAcceptanceChannel = (typeof TREATMENT_PLAN_ACCEPTANCE_CHANNELS)[number];
+
 export const TREATMENT_PLAN_LINE_KINDS = ["treatment", "package"] as const;
 export type TreatmentPlanLineKind = (typeof TREATMENT_PLAN_LINE_KINDS)[number];
 

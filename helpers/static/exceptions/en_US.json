@@ -297,6 +297,11 @@
         "message": "Choose either a practitioner (time off) or a location (closure), not both.",
         "error_code": "schedule_exception_target_required"
     },
+    "schedule_exception_end_before_start": {
+        "message": "Time off must end after it starts.",
+        "error_code": "schedule_exception_end_before_start",
+        "status": 400
+    },
     "treatment_plan_deposit_invalid": {
         "message": "Enter a deposit amount, or a percentage of at most 100.",
         "error_code": "treatment_plan_deposit_invalid",
@@ -365,6 +370,11 @@
     "treatment_plan_line_price_required": {
         "message": "\"{}\" needs a unit price: its treatment has no price in the price list.",
         "error_code": "treatment_plan_line_price_required",
+        "status": 400
+    },
+    "treatment_plan_patient_accepts_online": {
+        "message": "The patient asked several clinics through the portal, so they accept a quote in their own account.",
+        "error_code": "treatment_plan_patient_accepts_online",
         "status": 400
     },
     "clinicInquiry_not_found": {

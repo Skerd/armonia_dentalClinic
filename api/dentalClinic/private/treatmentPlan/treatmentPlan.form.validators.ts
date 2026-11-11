@@ -1,5 +1,5 @@
 import {buildCreateZodSchema, buildEditZodSchema} from "../../../../../core/helpers/schemaDefBuilder";
-import {RecordPlanPaymentFormDef, RefundPlanPaymentFormDef, TreatmentPlanSchemaDef} from "./treatmentPlan.schema-def";
+import {AcceptPlanAtClinicFormDef, RecordPlanPaymentFormDef, RefundPlanPaymentFormDef, TreatmentPlanSchemaDef} from "./treatmentPlan.schema-def";
 
 export function createTreatmentPlanFormSchema(languageCode: string, form: any = null) {
     return buildCreateZodSchema(TreatmentPlanSchemaDef, languageCode, form);
@@ -15,4 +15,8 @@ export function recordPlanPaymentFormSchema(languageCode: string, form: any = nu
 
 export function refundPlanPaymentFormSchema(languageCode: string, form: any = null) {
     return buildCreateZodSchema(RefundPlanPaymentFormDef, languageCode, form);
+}
+
+export function acceptPlanAtClinicFormSchema(languageCode: string, form: any = null) {
+    return buildCreateZodSchema(AcceptPlanAtClinicFormDef, languageCode, form);
 }
