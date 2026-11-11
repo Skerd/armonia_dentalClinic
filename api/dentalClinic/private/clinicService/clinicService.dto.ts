@@ -2,6 +2,7 @@ import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../cor
 import type {Media} from "../../../../../core/types";
 import type {ClinicServicePriceType} from "./clinicService.schema-def";
 import type {TreatmentCategory} from "../../../../constants";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
 
 export type ClinicService = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
@@ -17,6 +18,8 @@ export type ClinicService = DeletedData & OwnershipData & LifeCycleData & {
     bufferAfterMinutes: number;
     priceType: ClinicServicePriceType;
     price?: number;
+    /** Not stored: the clinic's one currency, added by the panel routes so a price is never shown bare (UX-07). */
+    currency?: CurrencySimple;
     onlineBookable: boolean;
     isPublic: boolean;
     isActive: boolean;
