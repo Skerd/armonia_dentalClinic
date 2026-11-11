@@ -60,6 +60,7 @@ export type ClinicDayAppointment = {
     status: AppointmentStatus;
     locationId: string;
     practitionerId: string;
+    serviceId: string;
     startAt: string;
     endAt: string;
     /** Only for callers who may read patient details. */
@@ -78,6 +79,8 @@ export type ClinicDayLocation = {
         _id: string;
         displayName: string;
         title?: string;
+        /** Treatments they do: an appointment can move to them only for one of these. */
+        serviceIds: string[];
         working: {start: string; end: string}[];
         timeOff: {start: string; end: string}[];
     }[];
