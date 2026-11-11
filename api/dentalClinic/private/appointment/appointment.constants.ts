@@ -7,6 +7,10 @@
 export const APPOINTMENT_STATUSES = ["pending", "confirmed", "completed", "cancelled", "no_show"] as const;
 export type AppointmentStatus = (typeof APPOINTMENT_STATUSES)[number];
 
+/** The list's "When" quick filter: still to come (or under way), on the company's today, or over. */
+export const APPOINTMENT_WHEN = ["upcoming", "today", "past"] as const;
+export type AppointmentWhen = (typeof APPOINTMENT_WHEN)[number];
+
 /** Statuses whose window keeps the dentist busy. */
 export const APPOINTMENT_BLOCKING_STATUSES: readonly AppointmentStatus[] = ["pending", "confirmed"];
 
