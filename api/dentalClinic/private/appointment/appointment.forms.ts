@@ -65,9 +65,9 @@ export const RescheduleAppointmentFormDef = {
 } as const;
 export type RescheduleAppointmentFormType = InferCreateForm<typeof RescheduleAppointmentFormDef>;
 
-/** One location's day for the panel's day view. */
+/** The panel's day view: one location's day, or every active location's when `location` is empty. */
 export const ClinicDayFormDef = {
-    location: {type: "objectId", required: true},
+    location: {type: "objectId", required: false},
     date:     {type: "string", required: true, format: "localDate"},
 } as const;
 export type ClinicDayFormType = InferCreateForm<typeof ClinicDayFormDef>;

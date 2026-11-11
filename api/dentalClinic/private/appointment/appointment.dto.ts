@@ -58,6 +58,7 @@ export type ClinicDayAppointment = {
     _id: string;
     number: string;
     status: AppointmentStatus;
+    locationId: string;
     practitionerId: string;
     startAt: string;
     endAt: string;
@@ -66,17 +67,28 @@ export type ClinicDayAppointment = {
     serviceName: string;
 };
 
+/** One location on the day view: its hours that day and a column per practitioner working there, in its own time zone. */
+export type ClinicDayLocation = {
+    _id: string;
+    name: string;
+    timezone: string;
+    /** When the location is open that day (empty when it sets no hours or is closed); the grid spans at least this. */
+    opening: {start: string; end: string}[];
+    practitioners: {
+        _id: string;
+        displayName: string;
+        title?: string;
+        working: {start: string; end: string}[];
+        timeOff: {start: string; end: string}[];
+    }[];
+};
+
 export type ClinicDayResponse = {
     data: {
         date: string;
-        timezone: string;
-        practitioners: {
-            _id: string;
-            displayName: string;
-            title?: string;
-            working: {start: string; end: string}[];
-            timeOff: {start: string; end: string}[];
-        }[];
+        /** The clinic's booking grid: a dragged appointment snaps to it. */
+        slotIntervalMinutes: number;
+        locations: ClinicDayLocation[];
         appointments: ClinicDayAppointment[];
     };
 };
