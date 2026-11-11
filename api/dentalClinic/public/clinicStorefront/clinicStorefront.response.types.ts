@@ -91,7 +91,8 @@ export type ClinicSlot = {
 export type ClinicSlotsResponse = {
     data: {
         timezone: string;
-        days: {date: string; slots: ClinicSlot[]}[];
+        /** `closed`: nobody who does the treatment works that day; a day without slots that is not closed is full. */
+        days: {date: string; closed: boolean; slots: ClinicSlot[]}[];
     };
 };
 
