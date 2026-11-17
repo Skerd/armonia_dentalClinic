@@ -4,51 +4,63 @@
     "codes": {
       "APPOINTMENT_NEW": {
         "title": "Nuovo appuntamento",
-        "message": "Nuovo appuntamento {number} il {when}"
+        "message": "Nuovo appuntamento {number} il {when}",
+        "link": "/dentalClinic/appointments?open={appointmentId}"
       },
       "APPOINTMENT_CANCELLED": {
         "title": "Appuntamento annullato dal paziente",
-        "message": "L'appuntamento {number} del {when} è stato annullato dal paziente"
+        "message": "L'appuntamento {number} del {when} è stato annullato dal paziente",
+        "link": "/dentalClinic/appointments?open={appointmentId}"
       },
       "INQUIRY_NEW": {
         "title": "Nuova richiesta di preventivo",
-        "message": "Nuova richiesta di preventivo {number}"
+        "message": "Nuova richiesta di preventivo {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_MESSAGE": {
         "title": "Nuovo messaggio del paziente",
-        "message": "Nuovo messaggio del paziente sulla richiesta {number}"
+        "message": "Nuovo messaggio del paziente sulla richiesta {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_FILES_ADDED": {
         "title": "File aggiunti dal paziente",
-        "message": "Il paziente ha aggiunto file alla richiesta {number}"
+        "message": "Il paziente ha aggiunto file alla richiesta {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_MEDICAL_HISTORY": {
         "title": "Anamnesi compilata",
-        "message": "Il paziente ha compilato l'anamnesi per la richiesta {number}"
+        "message": "Il paziente ha compilato l'anamnesi per la richiesta {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_WITHDRAWN": {
         "title": "Richiesta ritirata",
-        "message": "La richiesta {number} è stata ritirata dal paziente"
+        "message": "La richiesta {number} è stata ritirata dal paziente",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_UNANSWERED": {
         "title": "Richiesta ancora senza risposta",
-        "message": "La richiesta {number} è ancora senza risposta"
+        "message": "La richiesta {number} è ancora senza risposta",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_CHOSE_ANOTHER_CLINIC": {
         "title": "Il paziente ha scelto un'altra clinica",
-        "message": "Il paziente della richiesta {number} ha scelto un'altra clinica"
+        "message": "Il paziente della richiesta {number} ha scelto un'altra clinica",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "PLAN_ACCEPTED": {
         "title": "Preventivo accettato",
-        "message": "Il paziente ha accettato il tuo preventivo sulla richiesta {number}"
+        "message": "Il paziente ha accettato il tuo preventivo sulla richiesta {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "DEPOSIT_PAID": {
         "title": "Acconto pagato",
-        "message": "Il paziente ha pagato l'acconto sulla richiesta {number}"
+        "message": "Il paziente ha pagato l'acconto sulla richiesta {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "TRIP_DETAILS_ADDED": {
         "title": "Dettagli del viaggio aggiunti",
-        "message": "Il paziente ha aggiunto i dettagli del volo o dell'hotel sulla richiesta {number}"
+        "message": "Il paziente ha aggiunto i dettagli del volo o dell'hotel sulla richiesta {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       }
     }
   }

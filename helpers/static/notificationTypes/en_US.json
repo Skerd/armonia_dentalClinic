@@ -4,51 +4,63 @@
     "codes": {
       "APPOINTMENT_NEW": {
         "title": "New appointment",
-        "message": "New appointment {number} on {when}"
+        "message": "New appointment {number} on {when}",
+        "link": "/dentalClinic/appointments?open={appointmentId}"
       },
       "APPOINTMENT_CANCELLED": {
         "title": "Appointment cancelled by the patient",
-        "message": "Appointment {number} on {when} was cancelled by the patient"
+        "message": "Appointment {number} on {when} was cancelled by the patient",
+        "link": "/dentalClinic/appointments?open={appointmentId}"
       },
       "INQUIRY_NEW": {
         "title": "New estimate request",
-        "message": "New estimate request {number}"
+        "message": "New estimate request {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_MESSAGE": {
         "title": "New patient message",
-        "message": "New patient message on request {number}"
+        "message": "New patient message on request {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_FILES_ADDED": {
         "title": "Patient added files",
-        "message": "The patient added files to request {number}"
+        "message": "The patient added files to request {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_MEDICAL_HISTORY": {
         "title": "Medical history filled in",
-        "message": "The patient filled in the medical history for request {number}"
+        "message": "The patient filled in the medical history for request {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_WITHDRAWN": {
         "title": "Request withdrawn",
-        "message": "Request {number} was withdrawn by the patient"
+        "message": "Request {number} was withdrawn by the patient",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_UNANSWERED": {
         "title": "Request still unanswered",
-        "message": "Request {number} is still unanswered"
+        "message": "Request {number} is still unanswered",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_CHOSE_ANOTHER_CLINIC": {
         "title": "Patient chose another clinic",
-        "message": "The patient of request {number} chose another clinic"
+        "message": "The patient of request {number} chose another clinic",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "PLAN_ACCEPTED": {
         "title": "Quote accepted",
-        "message": "The patient accepted your quote on request {number}"
+        "message": "The patient accepted your quote on request {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "DEPOSIT_PAID": {
         "title": "Deposit paid",
-        "message": "The patient paid the deposit on request {number}"
+        "message": "The patient paid the deposit on request {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "TRIP_DETAILS_ADDED": {
         "title": "Trip details added",
-        "message": "The patient added flight or hotel details on request {number}"
+        "message": "The patient added flight or hotel details on request {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       }
     }
   }

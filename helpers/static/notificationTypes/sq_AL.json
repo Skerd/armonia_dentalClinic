@@ -4,51 +4,63 @@
     "codes": {
       "APPOINTMENT_NEW": {
         "title": "Takim i ri",
-        "message": "Takim i ri {number} më {when}"
+        "message": "Takim i ri {number} më {when}",
+        "link": "/dentalClinic/appointments?open={appointmentId}"
       },
       "APPOINTMENT_CANCELLED": {
         "title": "Takimi u anulua nga pacienti",
-        "message": "Takimi {number} më {when} u anulua nga pacienti"
+        "message": "Takimi {number} më {when} u anulua nga pacienti",
+        "link": "/dentalClinic/appointments?open={appointmentId}"
       },
       "INQUIRY_NEW": {
         "title": "Kërkesë e re për ofertë",
-        "message": "Kërkesë e re për ofertë {number}"
+        "message": "Kërkesë e re për ofertë {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_MESSAGE": {
         "title": "Mesazh i ri nga pacienti",
-        "message": "Mesazh i ri nga pacienti për kërkesën {number}"
+        "message": "Mesazh i ri nga pacienti për kërkesën {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_FILES_ADDED": {
         "title": "Pacienti shtoi skedarë",
-        "message": "Pacienti shtoi skedarë në kërkesën {number}"
+        "message": "Pacienti shtoi skedarë në kërkesën {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_MEDICAL_HISTORY": {
         "title": "Historia mjekësore u plotësua",
-        "message": "Pacienti plotësoi historinë mjekësore për kërkesën {number}"
+        "message": "Pacienti plotësoi historinë mjekësore për kërkesën {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_WITHDRAWN": {
         "title": "Kërkesa u tërhoq",
-        "message": "Kërkesa {number} u tërhoq nga pacienti"
+        "message": "Kërkesa {number} u tërhoq nga pacienti",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_UNANSWERED": {
         "title": "Kërkesa ende pa përgjigje",
-        "message": "Kërkesa {number} është ende pa përgjigje"
+        "message": "Kërkesa {number} është ende pa përgjigje",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "INQUIRY_CHOSE_ANOTHER_CLINIC": {
         "title": "Pacienti zgjodhi një klinikë tjetër",
-        "message": "Pacienti i kërkesës {number} zgjodhi një klinikë tjetër"
+        "message": "Pacienti i kërkesës {number} zgjodhi një klinikë tjetër",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "PLAN_ACCEPTED": {
         "title": "Oferta u pranua",
-        "message": "Pacienti pranoi ofertën tuaj për kërkesën {number}"
+        "message": "Pacienti pranoi ofertën tuaj për kërkesën {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "DEPOSIT_PAID": {
         "title": "Depozita u pagua",
-        "message": "Pacienti pagoi depozitën për kërkesën {number}"
+        "message": "Pacienti pagoi depozitën për kërkesën {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       },
       "TRIP_DETAILS_ADDED": {
         "title": "U shtuan detajet e udhëtimit",
-        "message": "Pacienti shtoi detajet e fluturimit ose të hotelit për kërkesën {number}"
+        "message": "Pacienti shtoi detajet e fluturimit ose të hotelit për kërkesën {number}",
+        "link": "/dentalClinic/inquiries?open={inquiryId}"
       }
     }
   }
