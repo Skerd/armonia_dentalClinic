@@ -396,5 +396,20 @@
         "message": "The treatment plan was not found.",
         "error_code": "treatmentPlan_not_found",
         "status": 404
+    },
+    "clinicReview_already_exists": {
+        "message": "This appointment already has a review.",
+        "error_code": "clinicReview_already_exists",
+        "status": 409
+    },
+    "clinicReview_not_found": {
+        "message": "The review was not found.",
+        "error_code": "clinicReview_not_found",
+        "status": 404
+    },
+    "clinic_review_not_open": {
+        "message": "A review can be left once the appointment has taken place.",
+        "error_code": "clinic_review_not_open",
+        "status": 400
     }
 }

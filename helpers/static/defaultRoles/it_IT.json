@@ -1,11 +1,11 @@
 {
   "clinic_admin": {
     "name": "Amministratore della clinica",
-    "description": "Gestisce la clinica: impostazioni, sedi, trattamenti, il team e i suoi turni, le assenze, ogni appuntamento, cartella paziente, richiesta di preventivo e viaggio del paziente."
+    "description": "Gestisce la clinica: impostazioni, sedi, trattamenti, il team e i suoi turni, le assenze, ogni appuntamento, cartella paziente, richiesta di preventivo, viaggio del paziente e recensione dei pazienti."
   },
   "clinic_receptionist": {
     "name": "Addetto alla reception",
-    "description": "Lavora alla reception: prenota, sposta, conferma e annulla gli appuntamenti, tiene aggiornate le cartelle dei pazienti e i viaggi (arrivi, transfer dall'aeroporto) e registra le assenze. Non può modificare trattamenti, team o impostazioni e non vede anamnesi, radiografie o foto."
+    "description": "Lavora alla reception: prenota, sposta, conferma e annulla gli appuntamenti, tiene aggiornate le cartelle dei pazienti e i viaggi (arrivi, transfer dall'aeroporto), registra le assenze e pubblica le recensioni dei pazienti. Non può modificare trattamenti, team o impostazioni e non vede anamnesi, radiografie o foto."
   },
   "clinic_dentist": {
     "name": "Dentista",

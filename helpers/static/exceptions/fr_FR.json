@@ -396,5 +396,20 @@
         "message": "Le plan de traitement est introuvable.",
         "error_code": "treatmentPlan_not_found",
         "status": 404
+    },
+    "clinicReview_already_exists": {
+        "message": "Ce rendez-vous a déjà un avis.",
+        "error_code": "clinicReview_already_exists",
+        "status": 409
+    },
+    "clinicReview_not_found": {
+        "message": "L'avis est introuvable.",
+        "error_code": "clinicReview_not_found",
+        "status": 404
+    },
+    "clinic_review_not_open": {
+        "message": "Un avis peut être laissé une fois le rendez-vous passé.",
+        "error_code": "clinic_review_not_open",
+        "status": 400
     }
 }

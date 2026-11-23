@@ -396,5 +396,20 @@
         "message": "Plani i trajtimit nuk u gjet.",
         "error_code": "treatmentPlan_not_found",
         "status": 404
+    },
+    "clinicReview_already_exists": {
+        "message": "Ky takim ka tashmë një vlerësim.",
+        "error_code": "clinicReview_already_exists",
+        "status": 409
+    },
+    "clinicReview_not_found": {
+        "message": "Vlerësimi nuk u gjet.",
+        "error_code": "clinicReview_not_found",
+        "status": 404
+    },
+    "clinic_review_not_open": {
+        "message": "Një vlerësim mund të lihet pasi takimi të jetë kryer.",
+        "error_code": "clinic_review_not_open",
+        "status": 400
     }
 }

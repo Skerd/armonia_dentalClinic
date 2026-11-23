@@ -144,6 +144,21 @@ export type AppointmentBookingResponse = {
 };
 
 export type PublicAppointmentResponse = {data: PublicAppointment};
+/** The guest page's appointment, and whether the patient may still write their one review (completed, none yet; D178). */
+export type ManagedAppointmentResponse = {data: PublicAppointment; canReview: boolean};
 /** After a reschedule the old link stops working; the page continues with this one. */
 export type RescheduledAppointmentResponse = {data: {appointment: PublicAppointment; manageToken: string}};
 export type PublicAppointmentsResponse = {data: PublicAppointment[]};
+
+/** One published review of the clinic (D178): the rating, the comment and the name it is shown under. */
+export type ClinicPublishedReview = {
+    rating: number;
+    comment?: string;
+    authorName: string;
+    createdAt: string;
+};
+
+/** The clinic's published reviews: the average out of 5, how many, and the latest ones. */
+export type ClinicReviewsResponse = {
+    data: {average: number; count: number; reviews: ClinicPublishedReview[]};
+};

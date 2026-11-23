@@ -1,11 +1,11 @@
 {
   "clinic_admin": {
     "name": "Klinikadministrator",
-    "description": "Führt die Klinik: Einstellungen, Standorte, Behandlungen, das Team und seine Dienstpläne, Abwesenheiten, jeden Termin, jede Patientenakte, jede Kostenvoranschlagsanfrage und jede Patientenreise."
+    "description": "Führt die Klinik: Einstellungen, Standorte, Behandlungen, das Team und seine Dienstpläne, Abwesenheiten, jeden Termin, jede Patientenakte, jede Kostenvoranschlagsanfrage, jede Patientenreise und jede Patientenbewertung."
   },
   "clinic_receptionist": {
     "name": "Empfang",
-    "description": "Arbeitet am Empfang: bucht, verschiebt, bestätigt und storniert Termine, hält Patientenakten und Reisen (Ankünfte, Flughafentransfers) aktuell und erfasst Abwesenheiten. Kann Behandlungen, das Team oder Einstellungen nicht ändern und sieht keine Krankengeschichten, Röntgenbilder oder Fotos."
+    "description": "Arbeitet am Empfang: bucht, verschiebt, bestätigt und storniert Termine, hält Patientenakten und Reisen (Ankünfte, Flughafentransfers) aktuell, erfasst Abwesenheiten und veröffentlicht Bewertungen von Patienten. Kann Behandlungen, das Team oder Einstellungen nicht ändern und sieht keine Krankengeschichten, Röntgenbilder oder Fotos."
   },
   "clinic_dentist": {
     "name": "Zahnarzt",

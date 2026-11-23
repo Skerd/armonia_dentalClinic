@@ -1,11 +1,11 @@
 {
   "clinic_admin": {
     "name": "Clinic Admin",
-    "description": "Runs the clinic: settings, locations, treatments, the team and their schedules, time off, every appointment, patient folder, estimate request and patient trip."
+    "description": "Runs the clinic: settings, locations, treatments, the team and their schedules, time off, every appointment, patient folder, estimate request, patient trip and patient review."
   },
   "clinic_receptionist": {
     "name": "Receptionist",
-    "description": "Works the front desk: books, moves, confirms and cancels appointments, keeps patient folders and trips (arrivals, airport pickups) up to date and enters time off. Cannot change treatments, the team or settings, and does not see medical histories, X-rays or photos."
+    "description": "Works the front desk: books, moves, confirms and cancels appointments, keeps patient folders and trips (arrivals, airport pickups) up to date, enters time off and publishes patients' reviews. Cannot change treatments, the team or settings, and does not see medical histories, X-rays or photos."
   },
   "clinic_dentist": {
     "name": "Dentist",

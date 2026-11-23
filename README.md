@@ -6,14 +6,14 @@ Enable at runtime via `ENABLED_MODULES` (maestro) or `VITE_ENABLED_MODULES` (sin
 
 ## Scope
 
-Clinic settings, locations with time zone and opening hours, treatments (duration, buffers, price display), practitioners with weekly working hours per location, time off and closures, and appointments with their lifecycle (pending, confirmed, moved, completed, cancelled, no-show). The public storefront contracts cover free times, booking and the guest manage link.
+Clinic settings, locations with time zone and opening hours, treatments (duration, buffers, price display), practitioners with weekly working hours per location, time off and closures, and appointments with their lifecycle (pending, confirmed, moved, completed, cancelled, no-show). The public storefront contracts cover free times, booking, the guest manage link and the patient's review of a completed appointment (D178), and the clinic's published reviews.
 
 ## Directory layout
 
 ```
 dentalClinic/
 ├── api/dentalClinic/private/<resource>/        # schema-defs, DTOs, validators
-├── api/dentalClinic/public/clinicStorefront/   # public slots, book, manage
+├── api/dentalClinic/public/clinicStorefront/   # public slots, book, manage, reviews
 ├── dto/                                        # *Simple snippet types
 └── helpers/static/exceptions/                  # error messages in 5 locales
 ```

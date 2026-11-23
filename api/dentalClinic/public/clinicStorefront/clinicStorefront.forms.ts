@@ -5,6 +5,7 @@ import {
     CLINIC_SLOTS_DAYS,
 } from "../../private/appointment/appointment.constants";
 import {AppointmentPatientDef, AppointmentStartDef} from "../../private/appointment/appointment.forms";
+import {CLINIC_REVIEW_COMMENT_MAX, CLINIC_REVIEW_RATING} from "../../private/clinicReview/clinicReview.schema-def";
 
 export const CLINIC_MANAGE_TOKEN_MAX = 2048;
 
@@ -36,6 +37,14 @@ export const ManageAppointmentFormDef = {
     token: {type: "string", required: true, min: 1, max: CLINIC_MANAGE_TOKEN_MAX},
 } as const;
 export type ManageAppointmentFormType = InferCreateForm<typeof ManageAppointmentFormDef>;
+
+/** The patient's one review of a completed appointment, from the guest link (D178). */
+export const ManageReviewFormDef = {
+    ...ManageAppointmentFormDef,
+    rating:  {type: "number", required: true, ...CLINIC_REVIEW_RATING},
+    comment: {type: "string", required: false, max: CLINIC_REVIEW_COMMENT_MAX},
+} as const;
+export type ManageReviewFormType = InferCreateForm<typeof ManageReviewFormDef>;
 
 /** Moving a booking from the guest link: same dentist, new start. */
 export const RescheduleManagedAppointmentFormDef = {

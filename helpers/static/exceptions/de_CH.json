@@ -396,5 +396,20 @@
         "message": "Der Behandlungsplan wurde nicht gefunden.",
         "error_code": "treatmentPlan_not_found",
         "status": 404
+    },
+    "clinicReview_already_exists": {
+        "message": "Zu diesem Termin gibt es bereits eine Bewertung.",
+        "error_code": "clinicReview_already_exists",
+        "status": 409
+    },
+    "clinicReview_not_found": {
+        "message": "Die Bewertung wurde nicht gefunden.",
+        "error_code": "clinicReview_not_found",
+        "status": 404
+    },
+    "clinic_review_not_open": {
+        "message": "Eine Bewertung ist möglich, sobald der Termin stattgefunden hat.",
+        "error_code": "clinic_review_not_open",
+        "status": 400
     }
 }

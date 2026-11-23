@@ -1,11 +1,11 @@
 {
   "clinic_admin": {
     "name": "Administrator i klinikës",
-    "description": "Drejton klinikën: cilësimet, vendndodhjet, trajtimet, ekipin dhe oraret e tij, lejet, çdo takim, dosje pacienti, kërkesë për preventiv dhe udhëtim pacienti."
+    "description": "Drejton klinikën: cilësimet, vendndodhjet, trajtimet, ekipin dhe oraret e tij, lejet, çdo takim, dosje pacienti, kërkesë për preventiv, udhëtim pacienti dhe vlerësim pacienti."
   },
   "clinic_receptionist": {
     "name": "Recepsionist",
-    "description": "Punon në recepsion: rezervon, zhvendos, konfirmon dhe anulon takimet, mban të përditësuara dosjet e pacientëve dhe udhëtimet (mbërritjet, transfertat nga aeroporti) dhe regjistron lejet. Nuk mund të ndryshojë trajtimet, ekipin ose cilësimet dhe nuk sheh historikun mjekësor, radiografitë ose fotot."
+    "description": "Punon në recepsion: rezervon, zhvendos, konfirmon dhe anulon takimet, mban të përditësuara dosjet e pacientëve dhe udhëtimet (mbërritjet, transfertat nga aeroporti), regjistron lejet dhe publikon vlerësimet e pacientëve. Nuk mund të ndryshojë trajtimet, ekipin ose cilësimet dhe nuk sheh historikun mjekësor, radiografitë ose fotot."
   },
   "clinic_dentist": {
     "name": "Stomatolog",
