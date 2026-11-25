@@ -411,5 +411,10 @@
         "message": "Një vlerësim mund të lihet pasi takimi të jetë kryer.",
         "error_code": "clinic_review_not_open",
         "status": 400
+    },
+    "clinic_review_written_by_patient_only": {
+        "message": "Vlerësimet i shkruajnë vetëm pacientët, nga lidhja në email-in e takimit. Ju mund t'i publikoni ose t'i fshehni.",
+        "error_code": "clinic_review_written_by_patient_only",
+        "status": 403
     }
 }

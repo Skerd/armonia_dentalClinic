@@ -411,5 +411,10 @@
         "message": "Un avis peut être laissé une fois le rendez-vous passé.",
         "error_code": "clinic_review_not_open",
         "status": 400
+    },
+    "clinic_review_written_by_patient_only": {
+        "message": "Seuls les patients écrivent leurs avis, depuis le lien de leur e-mail de rendez-vous. Vous pouvez les publier ou les masquer.",
+        "error_code": "clinic_review_written_by_patient_only",
+        "status": 403
     }
 }

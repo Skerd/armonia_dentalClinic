@@ -411,5 +411,10 @@
         "message": "Eine Bewertung ist möglich, sobald der Termin stattgefunden hat.",
         "error_code": "clinic_review_not_open",
         "status": 400
+    },
+    "clinic_review_written_by_patient_only": {
+        "message": "Bewertungen schreiben nur die Patienten selbst, über den Link in ihrer Termin-E-Mail. Sie können sie veröffentlichen oder verbergen.",
+        "error_code": "clinic_review_written_by_patient_only",
+        "status": 403
     }
 }

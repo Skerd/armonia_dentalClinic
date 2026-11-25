@@ -411,5 +411,10 @@
         "message": "A review can be left once the appointment has taken place.",
         "error_code": "clinic_review_not_open",
         "status": 400
+    },
+    "clinic_review_written_by_patient_only": {
+        "message": "Reviews are written by patients, from the link in their appointment email. You can publish or hide them.",
+        "error_code": "clinic_review_written_by_patient_only",
+        "status": 403
     }
 }
