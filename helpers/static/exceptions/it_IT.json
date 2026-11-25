@@ -337,6 +337,11 @@
         "error_code": "treatment_plan_online_payment_unavailable",
         "status": 409
     },
+    "treatment_plan_card_payments_coming_soon": {
+        "message": "I pagamenti con carta arrivano prossimamente. Versa l'acconto in clinica.",
+        "error_code": "treatment_plan_card_payments_coming_soon",
+        "status": 403
+    },
     "treatment_plan_payment_exceeds_due": {
         "message": "Il pagamento supera i {} ancora dovuti.",
         "error_code": "treatment_plan_payment_exceeds_due",

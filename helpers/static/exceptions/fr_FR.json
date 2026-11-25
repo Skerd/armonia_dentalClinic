@@ -337,6 +337,11 @@
         "error_code": "treatment_plan_online_payment_unavailable",
         "status": 409
     },
+    "treatment_plan_card_payments_coming_soon": {
+        "message": "Le paiement par carte arrive bientôt. Veuillez verser l'acompte à la clinique.",
+        "error_code": "treatment_plan_card_payments_coming_soon",
+        "status": 403
+    },
     "treatment_plan_payment_exceeds_due": {
         "message": "Le paiement dépasse les {} encore dus.",
         "error_code": "treatment_plan_payment_exceeds_due",

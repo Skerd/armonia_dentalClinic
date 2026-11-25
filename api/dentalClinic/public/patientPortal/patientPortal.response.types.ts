@@ -4,6 +4,7 @@ import type {TreatmentPlanLine, TreatmentPlanPhase, TreatmentPlanTotals} from ".
 import type {InquiryInfoRequest} from "../../private/clinicInquiry/clinicInquiry.dto";
 import type {ClinicMessage} from "../../private/clinicMessage/clinicMessage.dto";
 import type {MedicalHistory} from "../../../../dto/medicalHistory.dto";
+import type {CompanyBankAccount} from "../../../../../core/api/company/private/company/company.dto";
 
 /** A file the patient can open through the patient portal's own media route. */
 export type PatientFile = {
@@ -89,8 +90,13 @@ export type PatientPlan = {
     acceptedAt?: string;
     paymentStatus: TreatmentPlanPaymentStatus;
     amountPaid: number;
-    /** What the patient can still pay online now: the deposit less what was paid, once accepted. */
+    /** What the patient can still pay now: the deposit less what was paid, once accepted. */
     depositDue: number;
+    /**
+     * The clinic's bank account, another way to pay the deposit due (D190): set only while a deposit is due and the
+     * clinic has an IBAN; the IBAN is without spaces. `reference` is the plan number, for the transfer.
+     */
+    bankTransfer?: CompanyBankAccount & {iban: string; reference: string};
 };
 /** `onlinePayment`: the deposit can be paid by card here. */
 export type PatientPlansResponse = {data: PatientPlan[]; onlinePayment: boolean};
