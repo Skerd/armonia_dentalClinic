@@ -418,7 +418,7 @@
         "status": 400
     },
     "clinic_review_written_by_patient_only": {
-        "message": "Vlerësimet i shkruajnë vetëm pacientët, nga lidhja në email-in e takimit. Ju mund t'i publikoni ose t'i fshehni.",
+        "message": "Vlerësimet i shkruajnë vetëm pacientët, nga lidhja në email-in e takimit, dhe shfaqen menjëherë. Nëse një vlerësim shkel rregullat, raportojeni te platforma.",
         "error_code": "clinic_review_written_by_patient_only",
         "status": 403
     }

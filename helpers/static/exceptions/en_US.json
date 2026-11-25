@@ -418,7 +418,7 @@
         "status": 400
     },
     "clinic_review_written_by_patient_only": {
-        "message": "Reviews are written by patients, from the link in their appointment email. You can publish or hide them.",
+        "message": "Reviews are written by patients, from the link in their appointment email, and show at once. If one breaks the rules, report it to the platform.",
         "error_code": "clinic_review_written_by_patient_only",
         "status": 403
     }

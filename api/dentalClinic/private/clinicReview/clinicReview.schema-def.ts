@@ -6,7 +6,7 @@ export const CLINIC_REVIEW_RATING = {min: 1, max: 5} as const;
 
 /**
  * A patient's review of a completed appointment (D178): the rating, a comment and the name it is shown under, never
- * anything about their health (SEC-06). Publishing is the publish action, not a form field.
+ * anything about their health (SEC-06). It shows at once; only the platform can hide one (D191).
  */
 export const ClinicReviewSchemaDef = {
     appointment: {type: "objectId", required: true},

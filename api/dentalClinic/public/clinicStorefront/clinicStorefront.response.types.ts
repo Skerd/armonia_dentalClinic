@@ -152,6 +152,8 @@ export type PublicAppointmentsResponse = {data: PublicAppointment[]};
 
 /** One published review of the clinic (D178): the rating, the comment and the name it is shown under. */
 export type ClinicPublishedReview = {
+    /** The review's id, for reporting it to the platform (D191). */
+    _id: string;
     rating: number;
     comment?: string;
     authorName: string;

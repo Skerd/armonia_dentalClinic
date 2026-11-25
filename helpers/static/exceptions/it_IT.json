@@ -418,7 +418,7 @@
         "status": 400
     },
     "clinic_review_written_by_patient_only": {
-        "message": "Le recensioni le scrivono solo i pazienti, dal link nell'e-mail dell'appuntamento. Puoi pubblicarle o nasconderle.",
+        "message": "Le recensioni le scrivono solo i pazienti, dal link nell'e-mail dell'appuntamento, e compaiono subito. Se una viola le regole, segnalala alla piattaforma.",
         "error_code": "clinic_review_written_by_patient_only",
         "status": 403
     }

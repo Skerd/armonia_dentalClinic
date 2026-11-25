@@ -22,6 +22,8 @@ export type ClinicService = DeletedData & OwnershipData & LifeCycleData & {
     currency?: CurrencySimple;
     onlineBookable: boolean;
     isPublic: boolean;
+    /** Set when the platform hid the treatment after a report (D191): gone from the portal and the clinic's site. */
+    hiddenByPlatform: boolean;
     isActive: boolean;
     sortOrder: number;
 };

@@ -418,7 +418,7 @@
         "status": 400
     },
     "clinic_review_written_by_patient_only": {
-        "message": "Seuls les patients écrivent leurs avis, depuis le lien de leur e-mail de rendez-vous. Vous pouvez les publier ou les masquer.",
+        "message": "Seuls les patients écrivent leurs avis, depuis le lien de leur e-mail de rendez-vous, et ils s'affichent aussitôt. Si un avis enfreint les règles, signalez-le à la plateforme.",
         "error_code": "clinic_review_written_by_patient_only",
         "status": 403
     }
